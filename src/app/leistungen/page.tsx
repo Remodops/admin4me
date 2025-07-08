@@ -70,7 +70,7 @@ export default function Leistungen() {
               <h3 className="heading-sm text-professional dark:text-white mb-3 leading-tight">
                 {service.title}
               </h3>
-              <p className="text-sm font-semibold text-accent dark:text-blue-400 mb-4 uppercase tracking-wide">
+              <p className="text-base font-semibold referenz-service mb-4 uppercase tracking-wide">
                 {service.description}
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">

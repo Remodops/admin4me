@@ -76,7 +76,7 @@ export default function Referenzen() {
               <h3 className="heading-sm text-professional dark:text-white mb-4 leading-tight">
                 {reference.name}
               </h3>
-              <p className="text-sm font-semibold text-accent dark:text-blue-400 mb-4 uppercase tracking-wide">
+              <p className="text-base font-semibold referenz-service mb-4 uppercase tracking-wide">
                 {reference.service}
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 referenz-textblock">
