@@ -20,13 +20,7 @@
   --accent-blue: #1F47FF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  
-  /* Seriöse Blau-Farben */
+@theme {
   --color-blue-50: var(--primary-50);
   --color-blue-100: var(--primary-100);
   --color-blue-200: var(--primary-200);
@@ -54,123 +48,221 @@ body {
 }
 
 /* Verbesserte Typografie-Hierarchie */
-@layer utilities {
+.heading-xl {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
   .heading-xl {
-    @apply text-5xl sm:text-6xl font-black tracking-tight leading-none;
-    letter-spacing: -0.025em;
-  }
-  
-  .heading-lg {
-    @apply text-3xl sm:text-4xl font-bold tracking-tight;
-    letter-spacing: -0.015em;
-  }
-  
-  .heading-md {
-    @apply text-2xl sm:text-3xl font-bold tracking-tight;
-    letter-spacing: -0.01em;
-  }
-  
-  .heading-sm {
-    @apply text-xl sm:text-2xl font-bold;
-  }
-  
-  .text-enhanced {
-    @apply text-lg leading-relaxed;
-  }
-  
-  .text-subtitle {
-    @apply text-xl sm:text-2xl font-semibold tracking-wide;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    color: var(--primary-600);
-  }
-  
-  /* Content-Breite erweitert */
-  .max-w-content {
-    max-width: 56rem; /* 896px - zwischen 900-960px Bereich */
-  }
-  
-  /* Professionelle Komponenten */
-  .bg-gradient-professional {
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
-  }
-  
-  .bg-gradient-accent {
-    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
-  }
-  
-  .text-professional {
-    color: var(--primary-700);
-  }
-  
-  .text-accent {
-    color: var(--accent-blue);
-  }
-  
-  .border-professional {
-    border-color: var(--primary-200);
-  }
-  
-  .shadow-professional {
-    box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
-  }
-  
-  .shadow-lift {
-    box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
-  }
-  
-  /* Problem-Box Styling */
-  .problem-box {
-    @apply bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700;
-    @apply border-l-4 border-accent;
-    @apply p-8 rounded-xl shadow-professional;
-    @apply hover:shadow-lift hover:-translate-y-1;
-    @apply transition-all duration-300;
-  }
-  
-  .problem-box h3 {
-    @apply text-xl font-bold text-accent dark:text-blue-300 mb-4;
-    @apply leading-tight;
-  }
-  
-  /* Microanimationen */
-  .animate-subtle-float {
-    animation: subtle-float 6s ease-in-out infinite;
-  }
-  
-  .hover-lift {
-    @apply transition-all duration-300 ease-out;
-  }
-  
-  .hover-lift:hover {
-    @apply -translate-y-2 shadow-lift;
-  }
-  
-  .btn-primary {
-    @apply inline-flex items-center px-8 py-4 text-base font-semibold text-white;
-    @apply bg-gradient-accent hover:shadow-lift rounded-xl;
-    @apply transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
-    @apply hover:-translate-y-1;
-  }
-  
-  .btn-secondary {
-    @apply inline-flex items-center px-8 py-4 text-base font-semibold;
-    @apply text-professional dark:text-gray-300 bg-white dark:bg-gray-700;
-    @apply hover:bg-gray-50 dark:hover:bg-gray-600 rounded-xl;
-    @apply transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
-    @apply border border-professional hover:shadow-professional;
-  }
-  
-  /* Service Icons */
-  .service-icon {
-    @apply w-12 h-12 mx-auto mb-6 p-3 rounded-xl;
-    @apply bg-gradient-accent text-white;
-    @apply shadow-professional;
+    font-size: 3.75rem;
   }
 }
 
+.heading-lg {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  .heading-lg {
+    font-size: 2.25rem;
+  }
+}
+
+.heading-md {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 640px) {
+  .heading-md {
+    font-size: 1.875rem;
+  }
+}
+
+.heading-sm {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .heading-sm {
+    font-size: 1.5rem;
+  }
+}
+
+.text-enhanced {
+  font-size: 1.125rem;
+  line-height: 1.625;
+}
+
+.text-subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-600);
+}
+
+/* Content-Breite */
+.max-w-content {
+  max-width: 56rem;
+}
+
+/* Professionelle Farben */
+.text-professional {
+  color: var(--primary-700);
+}
+
+.text-accent {
+  color: var(--accent-blue);
+}
+
+.border-professional {
+  border-color: var(--primary-200);
+}
+
+.bg-gradient-professional {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
+}
+
+.shadow-professional {
+  box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+}
+
+.shadow-lift {
+  box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
+}
+
+/* Problem-Box Styling */
+.problem-box {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+  border-left: 4px solid var(--accent-blue);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+  transition: all 0.3s ease;
+}
+
+.problem-box:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
+}
+
+.problem-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+@media (prefers-color-scheme: dark) {
+  .problem-box {
+    background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+  }
+  
+  .problem-box h3 {
+    color: #93c5fd;
+  }
+}
+
+/* Hover-Effekte */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
+}
+
+/* Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-700);
+  background: white;
+  border: 1px solid var(--primary-200);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+  box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-secondary {
+    color: #d1d5db;
+    background: #374151;
+    border-color: #4b5563;
+  }
+  
+  .btn-secondary:hover {
+    background: #4b5563;
+  }
+}
+
+/* Service Icons */
+.service-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
+}
+
+/* Animationen */
 @keyframes subtle-float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-4px); }
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-4px); 
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 6s ease-in-out infinite;
 }
