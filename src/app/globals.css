@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-blue: #1e40af;
+  --primary-blue-light: #3b82f6;
+  --primary-blue-dark: #1e3a8a;
+  --accent-blue: #dbeafe;
+  --text-blue: #1e40af;
+  --border-blue: #bfdbfe;
 }
 
 @theme inline {
@@ -23,4 +29,35 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom blue color overrides for light mode */
+@media (prefers-color-scheme: light) {
+  .bg-blue-600 {
+    background-color: var(--primary-blue) !important;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: var(--primary-blue-dark) !important;
+  }
+  
+  .text-blue-600 {
+    color: var(--text-blue) !important;
+  }
+  
+  .hover\:text-blue-800:hover {
+    color: var(--primary-blue-dark) !important;
+  }
+  
+  .bg-blue-100 {
+    background-color: var(--accent-blue) !important;
+  }
+  
+  .border-blue-500 {
+    border-color: var(--primary-blue) !important;
+  }
+  
+  .focus\:ring-blue-500:focus {
+    --tw-ring-color: var(--primary-blue) !important;
+  }
 }

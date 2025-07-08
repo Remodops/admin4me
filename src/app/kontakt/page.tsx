@@ -21,11 +21,10 @@ export default function Kontakt() {
 
       {/* Contact Information */}
       <section className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Details */}
+        <div className="max-w-2xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                 Kontaktdaten
               </h2>
               
@@ -88,106 +87,7 @@ export default function Kontakt() {
                 </div>
               </div>
             </div>
-
-            {/* Business Hours */}
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Geschäftszeiten
-              </h3>
-              <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <div className="flex justify-between">
-                  <span>Montag - Freitag:</span>
-                  <span>8:00 - 18:00 Uhr</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Samstag:</span>
-                  <span>9:00 - 14:00 Uhr</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sonntag:</span>
-                  <span>Geschlossen</span>
-                </div>
-              </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                Notfall-Support auch außerhalb der Geschäftszeiten verfügbar
-              </p>
-            </div>
           </div>
-
-          {/* QR Codes */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Schnellkontakt
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Scannen Sie die QR-Codes für direkten Kontakt über WhatsApp oder Telegram.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* WhatsApp QR Code */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 rounded-lg flex items-center justify-center">
-                  <div className="text-green-600 dark:text-green-300 text-2xl font-bold">
-                    WhatsApp
-                  </div>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  WhatsApp QR-Code
-                </p>
-              </div>
-
-              {/* Telegram QR Code */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-lg flex items-center justify-center">
-                  <div className="text-blue-600 dark:text-blue-300 text-2xl font-bold">
-                    Telegram
-                  </div>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Telegram QR-Code
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form Placeholder */}
-      <section className="mb-16">
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Kontaktformular
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-            Für eine schnelle und unkomplizierte Kontaktaufnahme nutzen Sie am besten direkt E-Mail oder Telefon.
-          </p>
-          <div className="text-center">
-            <a
-              href="mailto:info@admin4me.de?subject=Anfrage von Website"
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-            >
-              E-Mail senden
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Area */}
-      <section className="text-center bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Servicegebiet
-        </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Wir bieten unsere IT-Services in Moringen und der gesamten Region an. 
-          Vor-Ort-Service ist in einem Umkreis von 30 km verfügbar.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-600 dark:text-gray-300">
-          <div>Moringen</div>
-          <div>Northeim</div>
-          <div>Einbeck</div>
-          <div>Göttingen</div>
-          <div>Uslar</div>
-          <div>Dassel</div>
         </div>
       </section>
     </div>

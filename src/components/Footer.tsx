@@ -11,9 +11,6 @@ export default function Footer() {
               Kontakt
             </h3>
             <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-              <p>admin4me</p>
-              <p>Lange Straße 4</p>
-              <p>37186 Moringen</p>
               <p>
                 <a
                   href="tel:055544074740"
