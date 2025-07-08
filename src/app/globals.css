@@ -100,6 +100,68 @@
   }
 }
 
+/* Tailwind Darkmode-Klasse */
+.dark :root {
+  --background: var(--dark-bg);
+  --foreground: var(--dark-text);
+}
+.dark body {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+.dark .heading-xl, .dark .heading-lg, .dark .heading-md, .dark .heading-sm {
+  color: var(--dark-heading) !important;
+}
+.dark .text-professional {
+  color: var(--dark-accent) !important;
+}
+.dark .text-accent {
+  color: var(--accent-blue) !important;
+}
+.dark .bg-gradient-professional {
+  background: linear-gradient(135deg, #22315A 0%, #1E293B 100%) !important;
+}
+.dark .bg-gradient-accent {
+  background: linear-gradient(135deg, #1F47FF 0%, #22315A 100%) !important;
+}
+.dark .shadow-professional, .dark .shadow-lift {
+  box-shadow: 0 4px 16px 0 rgba(31,71,255,0.10), 0 2px 8px 0 rgba(16,25,43,0.10) !important;
+}
+.dark .problem-box {
+  background: linear-gradient(135deg, #1E293B 0%, #22315A 100%) !important;
+  border-left: 4px solid var(--accent-blue) !important;
+  color: var(--dark-text) !important;
+}
+.dark .problem-box h3 {
+  color: var(--accent-blue) !important;
+}
+.dark .btn-primary {
+  background: linear-gradient(135deg, #1F47FF 0%, #22315A 100%) !important;
+  color: #fff !important;
+  border: none !important;
+}
+.dark .btn-primary:hover {
+  background: linear-gradient(135deg, #22315A 0%, #1F47FF 100%) !important;
+}
+.dark .btn-secondary {
+  color: var(--dark-text) !important;
+  background: var(--dark-card) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+.dark .btn-secondary:hover {
+  background: #273a5e !important;
+}
+.dark .service-icon {
+  background: linear-gradient(135deg, #1F47FF 0%, #22315A 100%) !important;
+  color: #fff !important;
+}
+.dark .bg-white {
+  background: var(--dark-card) !important;
+}
+.dark .border-professional {
+  border-color: var(--dark-border) !important;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
