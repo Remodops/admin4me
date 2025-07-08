@@ -64,7 +64,7 @@ export default function Referenzen() {
           {references.map((reference, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-professional dark:border-gray-700 shadow-professional hover-lift hover:shadow-lift transition-all duration-300"
+              className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-professional dark:border-gray-700 shadow-professional hover-lift hover:shadow-lift transition-all duration-300 referenz-card"
             >
               {/* Logo Placeholder */}
               <div className="w-20 h-20 bg-gradient-accent rounded-2xl flex items-center justify-center mb-6 shadow-professional">
@@ -73,13 +73,13 @@ export default function Referenzen() {
                 </span>
               </div>
               
-              <h3 className="heading-sm text-professional dark:text-white mb-3 leading-tight">
+              <h3 className="heading-sm text-professional dark:text-white mb-4 leading-tight">
                 {reference.name}
               </h3>
               <p className="text-sm font-semibold text-accent dark:text-blue-400 mb-4 uppercase tracking-wide">
                 {reference.service}
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 referenz-textblock">
                 {reference.description}
               </p>
             </div>

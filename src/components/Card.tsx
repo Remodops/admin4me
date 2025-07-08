@@ -8,7 +8,7 @@ interface CardProps {
 }
 
 export default function Card({ title, children, className = '', href }: CardProps) {
-  const baseClasses = 'p-8 rounded-xl border bg-white dark:bg-gray-800 shadow-sm transition-all duration-300';
+  const baseClasses = 'p-8 rounded-xl border bg-white dark:bg-gray-800 shadow-professional card-visual transition-all duration-300';
   
   if (href) {
     return (

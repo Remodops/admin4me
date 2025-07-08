@@ -4,6 +4,7 @@ import "./globals.css";
 // ThemeProvider entfernt - verwende einfache Dark Mode Implementierung
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Head from 'next/head';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" suppressHydrationWarning>
+    <html lang="de">
+      <Head>
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#10192B" media="(prefers-color-scheme: dark)" />
+      </Head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
           <Header />

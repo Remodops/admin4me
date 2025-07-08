@@ -61,7 +61,7 @@ export default function Preise() {
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-16">
       {/* Header */}
       <section className="text-center mb-20">
-        <h1 className="heading-xl text-gray-900 dark:text-white mb-8">
+        <h1 className="heading-xl text-gray-900 dark:text-white mb-8 shadow-preis-heading">
           Unsere Preise
         </h1>
         <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
@@ -76,7 +76,7 @@ export default function Preise() {
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-10 rounded-2xl transition-all duration-300 hover-lift ${
+              className={`relative p-12 rounded-2xl transition-all duration-300 hover-lift ${
                 plan.popular
                   ? 'border-2 border-accent bg-white dark:bg-gray-800 shadow-lift'
                   : 'border border-professional dark:border-gray-700 bg-white dark:bg-gray-800 shadow-professional hover:shadow-lift'
@@ -84,7 +84,7 @@ export default function Preise() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-accent text-white px-6 py-2 rounded-full text-sm font-bold shadow-professional">
+                  <span className="empfohlen-badge px-6 py-2 rounded-full text-sm font-bold shadow-professional">
                     Empfohlen
                   </span>
                 </div>
