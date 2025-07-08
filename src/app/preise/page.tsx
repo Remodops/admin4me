@@ -130,10 +130,10 @@ export default function Preise() {
 
               <a
                 href={`mailto:info@admin4me.de?subject=Interesse an ${plan.name}-Paket`}
-                className={`block w-full text-center py-4 px-6 rounded-xl font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+                className={`btn-primary block w-full text-center transition-all duration-200 ${
                   plan.popular
-                    ? 'bg-gradient-accent text-white hover:shadow-lift focus:ring-blue-500 dark:focus:ring-offset-gray-900 hover:-translate-y-1'
-                    : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white focus:ring-gray-500 dark:focus:ring-offset-gray-900 hover:shadow-professional'
+                    ? 'bg-gradient-accent text-white hover:shadow-lift focus:ring-blue-500 dark:focus:ring-offset-gray-900'
+                    : 'btn-secondary hover:shadow-professional'
                 }`}
               >
                 {plan.cta}

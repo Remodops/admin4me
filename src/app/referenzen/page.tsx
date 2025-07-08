@@ -88,15 +88,15 @@ export default function Referenzen() {
       </section>
 
       {/* CTA Section */}
-      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-12 border-professional dark:border-gray-700 shadow-professional">
-        <h2 className="heading-md text-professional dark:text-white mb-8">
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional">
+        <h2 className="heading-md text-professional dark:text-white mb-10">
           Werden Sie unser nächster zufriedener Kunde
         </h2>
-        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
           Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. 
           Kontaktieren Sie uns für ein unverbindliches Gespräch.
         </p>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <div className="flex flex-col sm:flex-row gap-8 justify-center">
           <a href="mailto:info@admin4me.de" className="btn-primary">
             E-Mail senden
           </a>
