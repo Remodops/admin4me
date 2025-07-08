@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-professional dark:border-gray-700 sticky top-0 z-50 shadow-sm">
-      <nav className="mx-auto max-w-screen-md px-4 sm:px-6 lg:px-8" aria-label="Top">
+      <nav className="mx-auto max-w-content px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">

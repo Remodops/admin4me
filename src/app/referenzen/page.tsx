@@ -46,40 +46,40 @@ const references = [
 
 export default function Referenzen() {
   return (
-    <div className="mx-auto max-w-screen-md px-4 sm:px-6 lg:px-8 py-12">
+    <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-16">
       {/* Header */}
-      <section className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+      <section className="text-center mb-20">
+        <h1 className="heading-xl text-gray-900 dark:text-white mb-8">
           Referenzen
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
           Zufriedene Kunden aus Moringen und Umgebung vertrauen auf unsere IT-Services. 
           Hier finden Sie eine Auswahl unserer erfolgreichen Projekte.
         </p>
       </section>
 
       {/* References Grid */}
-      <section className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
           {references.map((reference, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-professional dark:border-gray-700 shadow-professional hover-lift hover:shadow-lift transition-all duration-300"
             >
               {/* Logo Placeholder */}
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-blue-600 dark:text-blue-300 font-bold text-lg">
+              <div className="w-20 h-20 bg-gradient-accent rounded-2xl flex items-center justify-center mb-6 shadow-professional">
+                <span className="text-white font-bold text-lg">
                   {reference.logo}
                 </span>
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="heading-sm text-professional dark:text-white mb-3 leading-tight">
                 {reference.name}
               </h3>
-              <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-3">
+              <p className="text-sm font-semibold text-accent dark:text-blue-400 mb-4 uppercase tracking-wide">
                 {reference.service}
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 {reference.description}
               </p>
             </div>
@@ -88,25 +88,19 @@ export default function Referenzen() {
       </section>
 
       {/* CTA Section */}
-      <section className="text-center bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-12 border-professional dark:border-gray-700 shadow-professional">
+        <h2 className="heading-md text-professional dark:text-white mb-8">
           Werden Sie unser nächster zufriedener Kunde
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
           Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. 
           Kontaktieren Sie uns für ein unverbindliches Gespräch.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="mailto:info@admin4me.de"
-            className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-          >
+        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="mailto:info@admin4me.de" className="btn-primary">
             E-Mail senden
           </a>
-          <a
-            href="tel:055544074740"
-            className="inline-flex items-center px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-          >
+          <a href="tel:055544074740" className="btn-secondary">
             Anrufen
           </a>
         </div>

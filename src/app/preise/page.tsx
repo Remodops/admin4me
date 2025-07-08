@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Preise – admin4me",
-  description: "Transparente Preisgestaltung für IT-Services. Basis-Paket ab 50€/Monat, Komplett-Paket ab 120€/Monat. Individuelle Angebote auf Anfrage.",
+  description: "Transparente Preisgestaltung für IT-Services. Starter-Paket ab 50€/Monat, Sorglos-Paket ab 120€/Monat. Individuelle Angebote auf Anfrage.",
 };
 
 const pricingPlans = [
   {
-    name: "Basis",
+    name: "Starter",
     price: "50",
     period: "Monat",
     description: "Grundlegende IT-Betreuung für kleine Unternehmen",
@@ -19,79 +19,97 @@ const pricingPlans = [
       "E-Mail-Support",
       "Monatliche System-Checks",
     ],
-    cta: "Basis-Paket wählen",
+    cta: "Starter-Paket wählen",
     popular: false,
   },
   {
-    name: "Komplett",
+    name: "Sorglos",
     price: "120",
     period: "Monat",
     description: "Umfassende IT-Betreuung mit Vor-Ort-Service",
     features: [
-      "Alle Features aus dem Basis-Paket",
+      "Alle Features aus dem Starter-Paket",
       "Vor-Ort-Service bei Bedarf",
       "Netzwerkwartung und -überwachung",
       "Hardware-Beratung und -Einrichtung",
       "Prioritäts-Support",
       "Quartalsweise IT-Beratung",
     ],
-    cta: "Komplett-Paket wählen",
+    cta: "Sorglos-Paket wählen",
     popular: true,
+  },
+  {
+    name: "Individual",
+    price: "Auf Anfrage",
+    period: "",
+    description: "Maßgeschneiderte IT-Lösungen für spezielle Anforderungen",
+    features: [
+      "Alle Features der anderen Pakete",
+      "Individuell angepasste Leistungen",
+      "Dedizierter Ansprechpartner",
+      "24/7 Support verfügbar",
+      "Spezial-Projekte und Migrationen",
+      "Compliance und Zertifizierungen",
+    ],
+    cta: "Beratung anfragen",
+    popular: false,
   },
 ];
 
 export default function Preise() {
   return (
-    <div className="mx-auto max-w-screen-md px-4 sm:px-6 lg:px-8 py-12">
+    <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-16">
       {/* Header */}
-      <section className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+      <section className="text-center mb-20">
+        <h1 className="heading-xl text-gray-900 dark:text-white mb-8">
           Unsere Preise
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
           Transparente Preisgestaltung für professionelle IT-Services. 
           Wählen Sie das Paket, das zu Ihren Anforderungen passt.
         </p>
       </section>
 
       {/* Pricing Cards */}
-      <section className="mb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <section className="mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 rounded-lg border-2 ${
+              className={`relative p-10 rounded-2xl transition-all duration-300 hover-lift ${
                 plan.popular
-                  ? 'border-blue-500 bg-white dark:bg-gray-800 shadow-lg'
-                  : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'
+                  ? 'border-2 border-accent bg-white dark:bg-gray-800 shadow-lift'
+                  : 'border border-professional dark:border-gray-700 bg-white dark:bg-gray-800 shadow-professional hover:shadow-lift'
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-gradient-accent text-white px-6 py-2 rounded-full text-sm font-bold shadow-professional">
                     Empfohlen
                   </span>
                 </div>
               )}
               
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+              <div className="text-center mb-10">
+                <h3 className="heading-sm text-professional dark:text-white mb-4">
                   {plan.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                   {plan.description}
                 </p>
                 <div className="flex items-baseline justify-center">
                   <span className="text-4xl font-bold text-gray-900 dark:text-white">
-                    {plan.price}€
+                    {plan.price}
                   </span>
-                  <span className="text-gray-600 dark:text-gray-300 ml-1">
-                    /{plan.period}
-                  </span>
+                  {plan.period && (
+                    <span className="text-gray-600 dark:text-gray-300 ml-1">
+                      €/{plan.period}
+                    </span>
+                  )}
                 </div>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-10">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <svg
@@ -105,17 +123,17 @@ export default function Preise() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-gray-600 dark:text-gray-300">{feature}</span>
+                    <span className="text-gray-600 dark:text-gray-300 leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <a
-                href="mailto:info@admin4me.de?subject=Angebot für {plan.name}-Paket"
-                className={`block w-full text-center py-3 px-6 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+                href={`mailto:info@admin4me.de?subject=Interesse an ${plan.name}-Paket`}
+                className={`block w-full text-center py-4 px-6 rounded-xl font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                   plan.popular
-                    ? 'bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500 dark:focus:ring-offset-gray-900'
-                    : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white focus:ring-gray-500 dark:focus:ring-offset-gray-900'
+                    ? 'bg-gradient-accent text-white hover:shadow-lift focus:ring-blue-500 dark:focus:ring-offset-gray-900 hover:-translate-y-1'
+                    : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white focus:ring-gray-500 dark:focus:ring-offset-gray-900 hover:shadow-professional'
                 }`}
               >
                 {plan.cta}
@@ -126,19 +144,15 @@ export default function Preise() {
       </section>
 
       {/* Additional Info */}
-      <section className="text-center bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Individuelle Angebote
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-12 border-professional dark:border-gray-700 shadow-professional">
+        <h2 className="heading-md text-professional dark:text-white mb-8">
+          Haben Sie Fragen zu unseren Preisen?
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Haben Sie spezielle Anforderungen oder benötigen Sie ein maßgeschneidertes Angebot? 
-          Kontaktieren Sie uns für eine individuelle Beratung.
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
+          Alle Pakete können individuell angepasst werden. Gerne erstellen wir Ihnen ein maßgeschneidertes Angebot, das perfekt zu Ihren Anforderungen passt.
         </p>
         <div className="flex justify-center">
-          <Link
-            href="/kontakt"
-            className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-          >
+          <Link href="/kontakt" className="btn-primary">
             Kontakt aufnehmen
           </Link>
         </div>

@@ -15,6 +15,9 @@
   --primary-700: #1e40af;
   --primary-800: #1e3a8a;
   --primary-900: #1e293b;
+  
+  /* Akzentfarbe */
+  --accent-blue: #1F47FF;
 }
 
 @theme inline {
@@ -46,17 +49,63 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
 }
 
-/* Zusätzliche Anpassungen für ein professionelleres Erscheinungsbild */
+/* Verbesserte Typografie-Hierarchie */
 @layer utilities {
+  .heading-xl {
+    @apply text-5xl sm:text-6xl font-black tracking-tight leading-none;
+    letter-spacing: -0.025em;
+  }
+  
+  .heading-lg {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+    letter-spacing: -0.015em;
+  }
+  
+  .heading-md {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight;
+    letter-spacing: -0.01em;
+  }
+  
+  .heading-sm {
+    @apply text-xl sm:text-2xl font-bold;
+  }
+  
+  .text-enhanced {
+    @apply text-lg leading-relaxed;
+  }
+  
+  .text-subtitle {
+    @apply text-xl sm:text-2xl font-semibold tracking-wide;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: var(--primary-600);
+  }
+  
+  /* Content-Breite erweitert */
+  .max-w-content {
+    max-width: 56rem; /* 896px - zwischen 900-960px Bereich */
+  }
+  
+  /* Professionelle Komponenten */
   .bg-gradient-professional {
     background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
   }
   
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
+  }
+  
   .text-professional {
     color: var(--primary-700);
+  }
+  
+  .text-accent {
+    color: var(--accent-blue);
   }
   
   .border-professional {
@@ -66,4 +115,62 @@ body {
   .shadow-professional {
     box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.1), 0 2px 4px -1px rgba(30, 64, 175, 0.06);
   }
+  
+  .shadow-lift {
+    box-shadow: 0 10px 25px -3px rgba(30, 64, 175, 0.1), 0 4px 6px -2px rgba(30, 64, 175, 0.05);
+  }
+  
+  /* Problem-Box Styling */
+  .problem-box {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700;
+    @apply border-l-4 border-accent;
+    @apply p-8 rounded-xl shadow-professional;
+    @apply hover:shadow-lift hover:-translate-y-1;
+    @apply transition-all duration-300;
+  }
+  
+  .problem-box h3 {
+    @apply text-xl font-bold text-accent dark:text-blue-300 mb-4;
+    @apply leading-tight;
+  }
+  
+  /* Microanimationen */
+  .animate-subtle-float {
+    animation: subtle-float 6s ease-in-out infinite;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-2 shadow-lift;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center px-8 py-4 text-base font-semibold text-white;
+    @apply bg-gradient-accent hover:shadow-lift rounded-xl;
+    @apply transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    @apply hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-8 py-4 text-base font-semibold;
+    @apply text-professional dark:text-gray-300 bg-white dark:bg-gray-700;
+    @apply hover:bg-gray-50 dark:hover:bg-gray-600 rounded-xl;
+    @apply transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+    @apply border border-professional hover:shadow-professional;
+  }
+  
+  /* Service Icons */
+  .service-icon {
+    @apply w-12 h-12 mx-auto mb-6 p-3 rounded-xl;
+    @apply bg-gradient-accent text-white;
+    @apply shadow-professional;
+  }
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
 }
