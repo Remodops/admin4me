@@ -82,22 +82,22 @@ export default function Header() {
         {/* Mobile navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden">
-            <div className="space-y-1 pb-4 pt-3 border-t border-professional dark:border-gray-700">
+            <div className="space-y-2 pb-6 pt-4 border-t border-professional dark:border-gray-700">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`block px-4 py-3 text-base font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+                  className={`mobile-nav-link text-base font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
                     pathname === item.href
-                      ? 'text-white bg-gradient-professional shadow-sm'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-800'
+                      ? 'active'
+                      : 'text-gray-700 dark:text-gray-300'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 py-2">
+              <div className="px-4 py-3 mt-4">
                 <ThemeToggle />
               </div>
             </div>
