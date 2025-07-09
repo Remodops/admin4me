@@ -7,24 +7,29 @@ export const metadata: Metadata = {
 
 const referenzen = [
   {
-    name: 'Lindigkeit',
+    name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
     logo: '/images/references/lindigkeit.png',
-    text: 'IT-Betreuung für Lindigkeit – Moderne Lösungen für ein wachsendes Unternehmen.'
+    text: 'IT-Betreuung für Lindigkeit | Mertens – Moderne Lösungen für eine zukunftsorientierte Kanzlei.'
   },
   {
-    name: 'Pape',
+    name: 'Pape Martinihof GmbH & Co. KG',
     logo: '/images/references/pape.png',
-    text: 'Digitalisierung und Support für Pape – Effiziente Prozesse, zufriedene Mitarbeiter.'
+    text: 'Digitalisierung und Support für Pape Martinihof – Effiziente Prozesse, zufriedene Mitarbeiter.'
   },
   {
-    name: 'BDS',
+    name: 'Bund der Selbständigen - Gewerbeverband Bayern e. V.',
     logo: '/images/references/bds.png',
-    text: 'Sichere IT-Infrastruktur für BDS – Datenschutz und Zuverlässigkeit im Fokus.'
+    text: 'Sichere IT-Infrastruktur für den BDS – Datenschutz und Zuverlässigkeit im Fokus.'
   },
   {
     name: 'Hilmer',
     logo: '/images/references/hilmer.png',
     text: 'Hilmer – Zuverlässige IT-Lösungen und persönlicher Service für Ihr Unternehmen.'
+  },
+  {
+    name: 'Nüske Transport und Landschaftsbau GmbH',
+    logo: '/images/references/nueske.png',
+    text: 'Nüske – Moderne IT für Transport und Landschaftsbau. Effizient, sicher, zukunftsorientiert.'
   },
 ];
 
