@@ -43,7 +43,7 @@ export default function Home() {
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
         {/* Logo direkt anzeigen, ohne Kasten */}
-        <div className="mb-20 flex justify-center">
+        <div className="mt-8 mb-10 flex justify-center">
           {mounted ? (
             <img
               src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
