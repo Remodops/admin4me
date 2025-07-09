@@ -67,7 +67,7 @@ export default function Header() {
           </div>
           
           {/* Desktop navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-6">
+          <div className="hidden md:flex md:items-center md:space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -75,7 +75,7 @@ export default function Header() {
                 className={`text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg px-3 py-2 ${
                   pathname === item.href
                     ? 'text-white bg-gradient-professional shadow-sm dark:bg-blue-900 dark:text-white'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white dark:hover:bg-blue-900 hover:bg-blue-50 dark:hover:bg-gray-800'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white dark:hover:bg-blue-900 dark:hover:bg-gray-800'
                 }`.replace('bg-gradient-professional shadow-sm dark:bg-blue-900 dark:text-white', 'shadow-sm bg-gradient-professional text-white dark:bg-blue-900 dark:text-white')}
               >
                 {item.name}
