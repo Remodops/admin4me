@@ -1,6 +1,34 @@
+'use client';
+
 import Link from "next/link";
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        setTheme(savedTheme);
+      } else {
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        setTheme(systemTheme);
+      }
+      // Listener für Theme-Änderung
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const handler = (e: MediaQueryListEvent) => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      };
+      mq.addEventListener('change', handler);
+      return () => mq.removeEventListener('change', handler);
+    }
+  }, []);
+
   return (
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
@@ -14,12 +42,18 @@ export default function Home() {
         <p className="text-enhanced text-gray-700 dark:text-gray-300 mb-20 max-w-3xl mx-auto">
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
-        
-        {/* Hero Illustration Placeholder */}
-        <div className="w-80 h-56 mx-auto mb-20 bg-gradient-accent rounded-2xl shadow-lift flex items-center justify-center animate-subtle-float">
-          <div className="text-white text-4xl font-bold">
-            admin4me
-          </div>
+        {/* Logo direkt anzeigen, ohne Kasten */}
+        <div className="mb-20 flex justify-center">
+          {mounted ? (
+            <img
+              src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
+              alt="admin4me Logo"
+              className="h-40 max-w-xs w-auto sm:h-80 sm:max-w-2xl"
+              style={{ maxHeight: '320px' }}
+            />
+          ) : (
+            <div className="h-40 w-64 sm:h-80 sm:w-[32rem]" />
+          )}
         </div>
 
         <Link

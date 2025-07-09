@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // Icons als SVG-Komponenten
 const Bars3Icon = () => (
   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,6 +28,28 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        setTheme(savedTheme);
+      } else {
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        setTheme(systemTheme);
+      }
+      // Listener für Theme-Änderung
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const handler = (e: MediaQueryListEvent) => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      };
+      mq.addEventListener('change', handler);
+      return () => mq.removeEventListener('change', handler);
+    }
+  }, []);
 
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-professional dark:border-gray-700 sticky top-0 z-50 shadow-sm">
@@ -35,9 +57,12 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-professional dark:text-white">
-                admin4me
-              </span>
+              <img
+                src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
+                alt="admin4me Logo"
+                className="h-9 w-auto mr-2 transition-all duration-200"
+                style={{ maxHeight: '36px' }}
+              />
             </Link>
           </div>
           
