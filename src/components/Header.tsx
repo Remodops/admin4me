@@ -75,7 +75,7 @@ export default function Header() {
                 className={`text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg px-3 py-2 ${
                   pathname === item.href
                     ? 'text-white bg-gradient-professional shadow-sm'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-800'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white dark:hover:bg-blue-900 hover:bg-blue-50 dark:hover:bg-gray-800'
                 }`}
               >
                 {item.name}

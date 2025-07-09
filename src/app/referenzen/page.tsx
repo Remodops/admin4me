@@ -9,27 +9,52 @@ const referenzen = [
   {
     name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
     logo: '/images/references/lindigkeit.png',
-    text: 'IT-Betreuung für Lindigkeit | Mertens – Moderne Lösungen für eine zukunftsorientierte Kanzlei.'
+    text: 'IT-Betreuung für Lindigkeit | Mertens – Moderne Lösungen für eine zukunftsorientierte Kanzlei.',
+    bullets: [
+      'Sichere E-Mail-Archivierung',
+      'Datenschutz & Compliance',
+      'Zuverlässige Serverwartung'
+    ]
   },
   {
     name: 'Pape Martinihof GmbH & Co. KG',
     logo: '/images/references/pape.png',
-    text: 'Digitalisierung und Support für Pape Martinihof – Effiziente Prozesse, zufriedene Mitarbeiter.'
+    text: 'Digitalisierung und Support für Pape Martinihof – Effiziente Prozesse, zufriedene Mitarbeiter.',
+    bullets: [
+      'Cloud-Lösungen für Dokumentenmanagement',
+      'Schneller Vor-Ort-Service',
+      'Netzwerkoptimierung'
+    ]
   },
   {
     name: 'Bund der Selbständigen - Gewerbeverband Bayern e. V.',
     logo: '/images/references/bds.png',
-    text: 'Sichere IT-Infrastruktur für den BDS – Datenschutz und Zuverlässigkeit im Fokus.'
+    text: 'Sichere IT-Infrastruktur für den BDS – Datenschutz und Zuverlässigkeit im Fokus.',
+    bullets: [
+      'Datensicherung & Backups',
+      'IT-Support für Mitglieder',
+      'Schulungen zu IT-Sicherheit'
+    ]
   },
   {
     name: 'Hilmer',
     logo: '/images/references/hilmer.png',
-    text: 'Hilmer – Zuverlässige IT-Lösungen und persönlicher Service für Ihr Unternehmen.'
+    text: 'Hilmer – Zuverlässige IT-Lösungen und persönlicher Service für Ihr Unternehmen.',
+    bullets: [
+      'IT-Betreuung vor Ort',
+      'Hardware-Beschaffung',
+      'Schnelle Störungsbeseitigung'
+    ]
   },
   {
     name: 'Nüske Transport und Landschaftsbau GmbH',
     logo: '/images/references/nueske.png',
-    text: 'Nüske – Moderne IT für Transport und Landschaftsbau. Effizient, sicher, zukunftsorientiert.'
+    text: 'Nüske – Moderne IT für Transport und Landschaftsbau. Effizient, sicher, zukunftsorientiert.',
+    bullets: [
+      'Mobile Arbeitsplatzlösungen',
+      'GPS-Tracking für Fahrzeuge',
+      'Wartung der IT-Infrastruktur'
+    ]
   },
 ];
 
@@ -49,9 +74,25 @@ export default function Referenzen() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {referenzen.map((ref) => (
             <div key={ref.name} className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 flex flex-col items-center">
-              <img src={ref.logo} alt={ref.name + ' Logo'} className="h-24 w-auto mb-8" />
-              <h3 className="heading-md text-professional dark:text-white mb-4 text-center">{ref.name}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">{ref.text}</p>
+              <img
+                src={ref.logo}
+                alt={ref.name + ' Logo'}
+                className={
+                  ref.name.includes('Lindigkeit')
+                    ? 'max-h-40 max-w-xs w-auto h-auto mb-8 object-contain'
+                    : ref.name.includes('BDS') || ref.name.includes('Nüske')
+                    ? 'h-40 w-auto mb-8'
+                    : 'h-32 w-auto mb-8'
+                }
+                style={{ maxHeight: ref.name.includes('BDS') || ref.name.includes('Nüske') ? '180px' : ref.name.includes('Lindigkeit') ? '160px' : '140px' }}
+              />
+              <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>
+              <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-2">
+                {ref.bullets.map((bullet, i) => (
+                  <li key={i} className="flex items-start"><span className="text-blue-500 mr-2 mt-1">•</span>{bullet}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
