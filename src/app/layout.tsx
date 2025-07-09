@@ -4,7 +4,7 @@ import "./globals.css";
 // ThemeProvider entfernt - verwende einfache Dark Mode Implementierung
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Head from 'next/head';
+import ThemeProvider from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +31,10 @@ export const metadata: Metadata = {
     description: "Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb.",
   },
   viewport: "width=device-width, initial-scale=1",
-  themeColor: "#1f2937",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#10192B" }
+  ],
 };
 
 export default function RootLayout({
@@ -40,19 +43,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
-      <Head>
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#10192B" media="(prefers-color-scheme: dark)" />
-      </Head>
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
-          <Header />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </div>
+    <html lang="de" className="transition-colors duration-300">
+      <body className={`${inter.variable} font-sans antialiased transition-colors duration-300`}>
+        <ThemeProvider>
+          <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+            <Header />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

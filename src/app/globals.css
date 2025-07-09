@@ -1,5 +1,57 @@
 @import "tailwindcss";
 
+/* Flash Prevention - Verhindert das kurze Aufleuchten beim Theme-Wechsel */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #0f1117; /* Dark mode background as default */
+  color: #e0e0e0; /* Dark mode text as default */
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #0f1117; /* Dark mode background as default */
+  color: #e0e0e0; /* Dark mode text as default */
+}
+
+/* Light mode override */
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #ffffff;
+    color: #171717;
+  }
+  body {
+    background-color: #ffffff;
+    color: #171717;
+  }
+}
+
+/* Verhindert FOUC (Flash of Unstyled Content) */
+html[data-kzfjzlak] {
+  visibility: hidden;
+}
+
+html[data-kzfjzlak="true"] {
+  visibility: visible;
+}
+
+/* Aggressive Flash Prevention für Dark Mode */
+html.dark, body.dark {
+  background-color: #0f1117 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Verhindert Flash beim Navigieren */
+.min-h-screen {
+  background-color: #0f1117;
+  transition: background-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  .min-h-screen {
+    background-color: #f9fafb;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
