@@ -9,7 +9,7 @@ export default function Leistungen() {
   return (
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
       <div className="text-center mb-32">
-        <h1 className="heading-xl text-professional dark:text-white mb-12">
+        <h1 className="heading-xl text-gray-900 dark:text-white mb-12">
           Unsere Leistungen
         </h1>
         <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">

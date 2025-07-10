@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Kontakt() {
   return (
-    <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-16">
+    <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
       {/* Header */}
       <section className="text-center mb-24">
         <h1 className="heading-xl text-gray-900 dark:text-white mb-10">
