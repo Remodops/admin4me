@@ -30,9 +30,9 @@ export default function Leistungen() {
                 <Image
                   src="/images/leistungen/datev.jpg"
                   alt="DATEV Logo"
-                  width={300}
-                  height={100}
-                  className="w-[95%] h-auto object-contain"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -65,9 +65,9 @@ export default function Leistungen() {
                 <Image
                   src="/images/leistungen/ramicro.jpg"
                   alt="RA-Micro Logo"
-                  width={300}
-                  height={100}
-                  className="w-[95%] h-auto object-contain"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -100,9 +100,9 @@ export default function Leistungen() {
                 <Image
                   src="/images/leistungen/agenda.jpg"
                   alt="Agenda Software Logo"
-                  width={300}
-                  height={100}
-                  className="w-[95%] h-auto object-contain"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
