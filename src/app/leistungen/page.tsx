@@ -25,14 +25,14 @@ export default function Leistungen() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mr-6 overflow-hidden">
+            <div className="text-center mb-8">
+              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/leistungen/datev.jpg"
                   alt="DATEV Logo"
-                  width={64}
-                  height={64}
-                  className="object-cover"
+                  width={128}
+                  height={128}
+                  className="object-cover w-full h-full"
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
@@ -59,14 +59,15 @@ export default function Leistungen() {
           </div>
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mr-6 overflow-hidden">
+            <div className="text-center mb-8">
+              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/leistungen/ramicro.jpg"
                   alt="RA-Micro Logo"
-                  width={64}
-                  height={64}
-                  className="object-cover"
+                  width={128}
+                  height={128}
+                  className="object-contain w-full h-full p-2"
+                  style={{ imageRendering: 'auto' }}
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
@@ -93,14 +94,15 @@ export default function Leistungen() {
           </div>
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mr-6 overflow-hidden">
+            <div className="text-center mb-8">
+              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/leistungen/agenda.jpg"
                   alt="Agenda Software Logo"
-                  width={64}
-                  height={64}
-                  className="object-cover"
+                  width={128}
+                  height={128}
+                  className="object-contain w-full h-full p-2"
+                  style={{ imageRendering: 'auto' }}
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
@@ -135,14 +137,14 @@ export default function Leistungen() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mr-6 overflow-hidden">
+            <div className="text-center mb-8">
+              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/leistungen/Microsoft-Office-365-Logo.png"
                   alt="Microsoft 365 Logo"
-                  width={64}
-                  height={64}
-                  className="object-cover"
+                  width={128}
+                  height={128}
+                  className="object-cover w-full h-full"
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
