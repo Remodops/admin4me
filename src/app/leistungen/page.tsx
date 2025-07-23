@@ -137,12 +137,15 @@ export default function Leistungen() {
         </div>
       </section>
 
-      {/* Cloud & Office Solutions */}
+      {/* Cloud & Communication */}
       <section className="mb-32">
         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Cloud & Office-Lösungen
+          Cloud & Kommunikation
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+          Modernes Arbeiten mit Cloud-Technologie und Online-Kommunikation.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-full mb-6 flex justify-center">
@@ -155,7 +158,7 @@ export default function Leistungen() {
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
-              <h3 className="heading-md text-professional dark:text-white">
+              <h3 className="text-xl font-bold text-professional dark:text-white">
                 Microsoft 365 Administration
               </h3>
             </div>
@@ -182,154 +185,9 @@ export default function Leistungen() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="flex items-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                📺
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                Live Broadcast & Streaming
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Website Integration</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Multi-Platform Streaming</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Technische Betreuung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Equipment Setup</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Professionelle Live-Streaming-Lösungen für Ihre Website und alle gängigen Streaming-Plattformen.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Network & Infrastructure */}
-      <section className="mb-32">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Netzwerk & Infrastruktur
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                🖥️
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                Windows & Linux Administration
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Server-Verwaltung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Updates</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Performance-Optimierung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Backup-Strategien</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Professionelle Administration von Windows- und Linux-Netzwerken für maximale Stabilität und Sicherheit.
-            </p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                🌐
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                Filialvernetzung & Home Office
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Weltweite Filialvernetzung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">VPN-Einrichtung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Zugriff</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sichere Verbindungen</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Sichere und zuverlässige Vernetzung für weltweite Standorte und Home Office-Arbeitsplätze.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Security & Multimedia */}
-      <section className="mb-32">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Sicherheit & Multimedia
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                📹
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                Sicherheitskamera-Integration
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">System-Installation</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Netzwerk-Integration</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Überwachung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenspeicherung</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Professionelle Integration von Sicherheitskamera-Systemen in Ihr bestehendes Netzwerk.
-            </p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                🔒
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                Netzwerk-Sicherheit
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Firewall-Konfiguration</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Verschlüsselung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Zugriffskontrolle</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Audits</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Umfassende Sicherheitslösungen für Ihr Netzwerk und Ihre Daten.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Original Services */}
-      <section className="mb-32">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          IT-Support & Beratung
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
-                🔧
-              </div>
-              <h3 className="heading-md text-professional dark:text-white">
-                IT-Support vor Ort
-              </h3>
-            </div>
-            <div className="space-y-4">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Hardware-Reparatur</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Software-Installation</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">System-Updates</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datensicherung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Virenentfernung</div>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Schnelle Hilfe direkt bei Ihnen vor Ort. Wir kommen zu Ihnen und lösen Ihre IT-Probleme professionell und zuverlässig.
-            </p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="flex items-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
                 ☁️
               </div>
-              <h3 className="heading-md text-professional dark:text-white">
+              <h3 className="text-xl font-bold text-professional dark:text-white">
                 Remote-Support
               </h3>
             </div>
@@ -348,9 +206,80 @@ export default function Leistungen() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="flex items-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                📺
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Live Broadcast & Streaming
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Website Integration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Multi-Platform Streaming</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Technische Betreuung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Equipment Setup</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Professionelle Live-Streaming-Lösungen für Ihre Website und alle gängigen Streaming-Plattformen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* IT Infrastructure & Networks */}
+      <section className="mb-32">
+        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+          Netzwerke & Systembetrieb
+        </h2>
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+          Stabilität, Sicherheit und Administration Ihrer IT-Infrastruktur.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
                 🖥️
               </div>
-              <h3 className="heading-md text-professional dark:text-white">
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Windows & Linux Administration
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Server-Verwaltung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Updates</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Performance-Optimierung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Backup-Strategien</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Professionelle Administration von Windows- und Linux-Netzwerken für maximale Stabilität und Sicherheit.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                🔒
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Netzwerk-Sicherheit
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Firewall-Konfiguration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Verschlüsselung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Zugriffskontrolle</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Audits</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Umfassende Sicherheitslösungen für Ihr Netzwerk und Ihre Daten.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                🌐
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
                 Netzwerk-Setup
               </h3>
             </div>
@@ -369,9 +298,112 @@ export default function Leistungen() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="flex items-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                🏢
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Filialvernetzung & Home Office
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Weltweite Filialvernetzung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">VPN-Einrichtung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Zugriff</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sichere Verbindungen</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Sichere und zuverlässige Vernetzung für weltweite Standorte und Home Office-Arbeitsplätze.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Security & Monitoring */}
+      <section className="mb-32">
+        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+          IT-Sicherheit & Überwachung
+        </h2>
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+          Komplette Sicherheitslösungen für Ihr Unternehmen.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                📹
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Sicherheitskamera-Integration
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">System-Installation</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Netzwerk-Integration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Überwachung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenspeicherung</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Professionelle Integration von Sicherheitskamera-Systemen in Ihr bestehendes Netzwerk.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                🛡️
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                Datenschutz & Compliance
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">DSGVO-Compliance</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenverschlüsselung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Backup-Strategien</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Audits</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Umfassende Datenschutzlösungen und Compliance-Beratung für Ihr Unternehmen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* IT Support & Training */}
+      <section className="mb-32">
+        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+          Beratung & Betreuung
+        </h2>
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+          Endkundennah, direkt umsetzbar - professioneller IT-Support und individuelle Schulungen.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
+                🔧
+              </div>
+              <h3 className="text-xl font-bold text-professional dark:text-white">
+                IT-Support vor Ort
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Hardware-Reparatur</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Software-Installation</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">System-Updates</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datensicherung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Virenentfernung</div>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
+              Schnelle Hilfe direkt bei Ihnen vor Ort. Wir kommen zu Ihnen und lösen Ihre IT-Probleme professionell und zuverlässig.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="flex items-center mb-8">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mr-6">
                 📚
               </div>
-              <h3 className="heading-md text-professional dark:text-white">
+              <h3 className="text-xl font-bold text-professional dark:text-white">
                 Schulungen & Beratung
               </h3>
             </div>
