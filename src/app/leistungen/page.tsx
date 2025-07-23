@@ -26,13 +26,14 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
+              <div className="w-full mb-6 flex justify-center">
                 <Image
                   src="/images/leistungen/datev.jpg"
                   alt="DATEV Logo"
-                  width={128}
-                  height={128}
-                  className="object-cover w-full h-full"
+                  width={300}
+                  height={100}
+                  className="w-[95%] h-auto object-contain"
+                  style={{ imageRendering: 'auto' }}
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
@@ -60,13 +61,13 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
+              <div className="w-full mb-6 flex justify-center">
                 <Image
                   src="/images/leistungen/ramicro.jpg"
                   alt="RA-Micro Logo"
-                  width={128}
-                  height={128}
-                  className="object-contain w-full h-full p-2"
+                  width={300}
+                  height={100}
+                  className="w-[95%] h-auto object-contain"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -95,13 +96,13 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
+              <div className="w-full mb-6 flex justify-center">
                 <Image
                   src="/images/leistungen/agenda.jpg"
                   alt="Agenda Software Logo"
-                  width={128}
-                  height={128}
-                  className="object-contain w-full h-full p-2"
+                  width={300}
+                  height={100}
+                  className="w-[95%] h-auto object-contain"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
