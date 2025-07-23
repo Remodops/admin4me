@@ -23,16 +23,16 @@ export default function Leistungen() {
         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
           Software-Support & Beratung
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-full mb-6 flex justify-center">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
                   src="/images/leistungen/datev.jpg"
                   alt="DATEV Logo"
                   width={400}
                   height={120}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-h-20"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -40,34 +40,36 @@ export default function Leistungen() {
                 DATEV Support
               </h3>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation & Updates</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Konfiguration</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Troubleshooting</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenmigration</div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Professioneller Support für DATEV-Software mit Installation, Updates und individueller Beratung.
-            </p>
-            <a 
-              href="https://www.datev.de" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-6 text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold"
-            >
-              Mehr über DATEV →
-            </a>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Professioneller DATEV Installations- und Update Service mit individueller Beratung und umfassender Betreuung für alle DATEV-Produkte.
+              </p>
+              <a 
+                href="https://www.datev.de" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto"
+              >
+                Mehr über DATEV →
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-full mb-6 flex justify-center">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
-                  src="/images/leistungen/ramicro.jpg"
+                  src="/images/leistungen/ramicro.png"
                   alt="RA-Micro Logo"
                   width={400}
                   height={120}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-h-20"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -75,34 +77,36 @@ export default function Leistungen() {
                 RA-Micro Erste Hilfe
               </h3>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Schnelle Problemlösung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Kanzleisoftware Support</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenrettung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Systemoptimierung</div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Sofortige Hilfe bei RA-Micro Kanzleisoftware - wir lösen Ihre Probleme schnell und zuverlässig.
-            </p>
-            <a 
-              href="https://www.ra-micro.de" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-6 text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold"
-            >
-              Mehr über RA-Micro →
-            </a>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Sofortige Hilfe bei RA-Micro Kanzleisoftware - wir lösen Ihre Probleme schnell und zuverlässig.
+              </p>
+              <a 
+                href="https://www.ra-micro.de" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto"
+              >
+                Mehr über RA-Micro →
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full md:col-span-2 lg:col-span-1">
             <div className="text-center mb-8">
-              <div className="w-full mb-6 flex justify-center">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
                   src="/images/leistungen/agenda.jpg"
                   alt="Agenda Software Logo"
                   width={400}
                   height={120}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain max-h-20"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
@@ -110,23 +114,25 @@ export default function Leistungen() {
                 Agenda Support
               </h3>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Erst Support</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Schulung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Wartung</div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 mt-8 leading-relaxed">
-              Kompetenter Support für Agenda-Software mit Installation, Schulung und laufender Betreuung.
-            </p>
-            <a 
-              href="https://www.agenda-software.de/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-6 text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold"
-            >
-              Mehr über Agenda →
-            </a>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Kompetenter Support für Agenda-Software mit Installation, Schulung und laufender Betreuung und zuverlässigem Support bei Softwareproblemen im Kanzleialltag.
+              </p>
+              <a 
+                href="https://www.agenda-software.de/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto"
+              >
+                Mehr über Agenda →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -139,13 +145,14 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-accent rounded-xl flex items-center justify-center overflow-hidden">
+              <div className="w-full mb-6 flex justify-center">
                 <Image
                   src="/images/leistungen/Microsoft-Office-365-Logo.png"
                   alt="Microsoft 365 Logo"
-                  width={128}
-                  height={128}
-                  className="object-cover w-full h-full"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain"
+                  style={{ imageRendering: 'auto' }}
                 />
               </div>
               <h3 className="heading-md text-professional dark:text-white">
