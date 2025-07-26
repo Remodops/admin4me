@@ -56,6 +56,96 @@ const referenzen = [
       'Wartung der IT-Infrastruktur'
     ]
   },
+  {
+    name: 'BDS Mehrwert GmbH',
+    logo: '/images/references/bds-mehrwert.svg',
+    text: 'BDS Mehrwert GmbH – Exklusive Vorteilsangebote für BDS Bayern Mitglieder in den Bereichen KFZ, Versicherung, Vorsorge und Freizeit.',
+    bullets: [
+      'Vorteilsangebote für Mitglieder',
+      'Branchenbuch & Mediathek',
+      'KFZ Abrufschein-Service'
+    ]
+  },
+  {
+    name: 'Bayern Impulse',
+    logo: '/images/references/bayern-impulse.png',
+    text: 'Bayern Impulse – Innovative Lösungen und Impulse für die bayerische Wirtschaft.',
+    bullets: [
+      'Wirtschaftsförderung',
+      'Innovationsberatung',
+      'Regionale Entwicklung'
+    ]
+  },
+  {
+    name: 'IT Fernsehen UG',
+    logo: '/images/references/it-fernsehen.png',
+    text: 'IT Fernsehen UG – Professionelle IT-Lösungen und Beratung für moderne Unternehmen.',
+    bullets: [
+      'IT-Beratung & Consulting',
+      'Systemadministration',
+      'Netzwerk-Services'
+    ]
+  },
+  {
+    name: 'Bauverein Northeim eG',
+    logo: '/images/references/bauverein-logo.jpg.webp',
+    text: 'Bauverein Northeim eG – Seit 100 Jahren zuverlässiger Partner für Wohnraumversorgung in Northeim.',
+    bullets: [
+      'Wohnungsverwaltung',
+      'Genossenschaftliche Strukturen',
+      'Moderne Wohnanlagen'
+    ]
+  },
+  {
+    name: 'Barenberg Special Materials GmbH',
+    logo: '/images/references/Barenberg-Special-Materials-GmbH.png',
+    text: 'Barenberg Special Materials GmbH – Spezialist für Ultra-Hochtemperaturverfahrenstechnik zur Herstellung von Refraktärmetallen.',
+    bullets: [
+      'Wolfram Schmelzcarbid',
+      'Up-Cycling Wolfram Metal Pulver',
+      'F&E für Produktentwicklung'
+    ]
+  },
+  {
+    name: 'RA Michael Forster',
+    logo: '/images/references/ra-forster.png',
+    text: 'RA Michael Forster – Kompetente Rechtsberatung und zuverlässige IT-Infrastruktur für moderne Kanzleien.',
+    bullets: [
+      'Rechtsanwaltskanzlei',
+      'IT-Sicherheit & Compliance',
+      'Digitale Arbeitsprozesse'
+    ]
+  },
+  {
+    name: 'Sehorz IT-Center',
+    logo: '/images/references/sehorz.JPG',
+    text: 'Sehorz IT-Center – Ihr Partner für Mediendesign, Seminare, Software und Consulting mit über 15 Jahren Erfahrung.',
+    bullets: [
+      'Mediendesign & Webentwicklung',
+      'Software-Entwicklung (seventox®)',
+      'IT-Consulting & Storage-Experten'
+    ]
+  },
+  {
+    name: 'GOESYS AG',
+    logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
+    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
+    bullets: [
+      'IT-Systemhaus Services',
+      'Unternehmens-IT-Lösungen',
+      'Professionelle IT-Betreuung'
+    ]
+  },
+  {
+    name: 'iS-Fun Internet Services GmbH',
+    logo: '/images/references/isfun.PNG',
+    text: 'iS-Fun Internet Services GmbH – Innovative Internet-Services und maßgeschneiderte IT-Lösungen.',
+    bullets: [
+      'Internet Services',
+      'Maßgeschneiderte IT-Lösungen',
+      'Moderne Webtechnologien'
+    ]
+  },
 ];
 
 export default function Referenzen() {
@@ -77,14 +167,7 @@ export default function Referenzen() {
               <img
                 src={ref.logo}
                 alt={`${ref.name} - Firmenlogo`}
-                className={
-                  ref.name.includes('Lindigkeit')
-                    ? 'max-h-40 max-w-xs w-auto h-auto mb-8 object-contain'
-                    : ref.name.includes('BDS') || ref.name.includes('Nüske')
-                    ? 'h-40 w-auto mb-8'
-                    : 'h-32 w-auto mb-8'
-                }
-                style={{ maxHeight: ref.name.includes('BDS') || ref.name.includes('Nüske') ? '180px' : ref.name.includes('Lindigkeit') ? '160px' : '140px' }}
+                className="max-h-32 max-w-full w-auto h-auto mb-8 object-contain"
               />
               <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>
