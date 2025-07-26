@@ -76,7 +76,7 @@ export default function Referenzen() {
             <div key={ref.name} className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 flex flex-col items-center">
               <img
                 src={ref.logo}
-                alt={ref.name + ' Logo'}
+                alt={`${ref.name} - Firmenlogo`}
                 className={
                   ref.name.includes('Lindigkeit')
                     ? 'max-h-40 max-w-xs w-auto h-auto mb-8 object-contain'
@@ -109,7 +109,7 @@ export default function Referenzen() {
         </p>
         <div className="flex flex-col sm:flex-row gap-8 justify-center">
           <a href="/kontakt" className="btn-primary">
-            Beratungsgespräch anfragen
+            Beratung anfragen
           </a>
           <a href="/leistungen" className="btn-secondary">
             Unsere Leistungen

@@ -24,7 +24,7 @@ export default function Preise() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           {/* Vor-Ort-Service */}
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 text-center h-full">
-            <div className="service-icon text-4xl mb-8">🏢</div>
+            <div className="service-icon text-4xl mb-8" aria-hidden="true">🏢</div>
             <h3 className="heading-md text-professional dark:text-white mb-8">
               Vor-Ort-Service
             </h3>
@@ -60,7 +60,7 @@ export default function Preise() {
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent dark:bg-blue-400 text-white px-6 py-2 rounded-full text-sm font-semibold">
               Beliebt
             </div>
-            <div className="service-icon text-4xl mb-8 mt-4">💻</div>
+            <div className="service-icon text-4xl mb-8 mt-4" aria-hidden="true">💻</div>
             <h3 className="heading-md text-professional dark:text-white mb-8">
               Remote-Support
             </h3>
@@ -87,13 +87,13 @@ export default function Preise() {
               </li>
             </ul>
             <a href="/kontakt" className="btn-primary w-full">
-              Sofort starten
+              Remote-Support anfragen
             </a>
           </div>
 
           {/* Beratung */}
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 text-center h-full">
-            <div className="service-icon text-4xl mb-8">💡</div>
+            <div className="service-icon text-4xl mb-8" aria-hidden="true">💡</div>
             <h3 className="heading-md text-professional dark:text-white mb-8">
               IT-Beratung
             </h3>
@@ -120,7 +120,7 @@ export default function Preise() {
               </li>
             </ul>
             <a href="/kontakt" className="btn-primary w-full">
-              Beratung anfragen
+              IT-Beratung anfragen
             </a>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function Home() {
           {mounted ? (
             <img
               src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
-              alt="admin4me Logo"
+              alt="admin4me - IT-Administration & Support Logo"
               className="h-40 max-w-xs w-auto sm:h-80 sm:max-w-2xl"
               style={{ maxHeight: '320px' }}
             />
@@ -60,7 +60,7 @@ export default function Home() {
           href="/kontakt"
           className="btn-primary"
         >
-          Jetzt Kontakt aufnehmen
+          Kontakt aufnehmen
         </Link>
       </section>
 
@@ -112,7 +112,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-8 justify-center">
           <Link href="/kontakt" className="btn-primary">
-            Kontakt aufnehmen
+            Beratung anfragen
           </Link>
           <Link href="/leistungen" className="btn-secondary">
             Unsere Leistungen

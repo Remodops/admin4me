@@ -34,7 +34,7 @@ export default function Kontakt() {
           <div className="space-y-10">
             <div className="flex items-start lg:justify-start justify-center">
               <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -53,7 +53,7 @@ export default function Kontakt() {
 
             <div className="flex items-start lg:justify-start justify-center">
               <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
@@ -72,7 +72,7 @@ export default function Kontakt() {
 
             <div className="flex items-start lg:justify-start justify-center">
               <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -105,7 +105,7 @@ export default function Kontakt() {
             <div className="text-center flex-1">
               <div className="w-36 h-36 mx-auto mb-8 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 rounded-2xl flex items-center justify-center shadow-professional hover-lift transition-all duration-300 p-4">
                 <div className="text-green-600 dark:text-green-300 text-center">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.251"/>
                   </svg>
                   <span className="font-bold text-xl tracking-wide block">WhatsApp</span>
@@ -120,7 +120,7 @@ export default function Kontakt() {
             <div className="text-center flex-1">
               <div className="w-36 h-36 mx-auto mb-8 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-2xl flex items-center justify-center shadow-professional hover-lift transition-all duration-300 p-4">
                 <div className="text-blue-600 dark:text-blue-300 text-center">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                   </svg>
                   <span className="font-bold text-xl tracking-wide block">Telegram</span>
@@ -133,6 +133,143 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
+
+      {/* Kontaktformular Section */}
+      <section className="mb-32">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-12 border border-professional dark:border-gray-700 shadow-professional">
+          <div className="text-center mb-12">
+            <h2 className="heading-md text-professional dark:text-white mb-6">
+              Kontaktformular
+            </h2>
+            <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück. 
+              Für dringende Anfragen nutzen Sie gerne auch Telefon oder E-Mail.
+            </p>
+          </div>
+
+          <form className="max-w-2xl mx-auto space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                  Vorname *
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                  placeholder="Ihr Vorname"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                  Nachname *
+                </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                  placeholder="Ihr Nachname"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                  E-Mail-Adresse *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                  placeholder="ihre.email@beispiel.de"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                  Telefonnummer
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                  placeholder="05554 4074740"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                Betreff *
+              </label>
+              <select
+                id="subject"
+                name="subject"
+                required
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+              >
+                <option value="">Bitte wählen Sie einen Betreff</option>
+                <option value="it-support">IT-Support & Beratung</option>
+                <option value="datev-support">DATEV Support</option>
+                <option value="network-setup">Netzwerk-Setup</option>
+                <option value="remote-support">Remote-Support</option>
+                <option value="hardware-repair">Hardware-Reparatur</option>
+                <option value="training">Schulung & Training</option>
+                <option value="consultation">Beratungsgespräch</option>
+                <option value="other">Sonstiges</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                Ihre Nachricht *
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows={6}
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors resize-vertical"
+                placeholder="Beschreiben Sie Ihr Anliegen oder Problem. Je detaillierter, desto besser können wir Ihnen helfen."
+              ></textarea>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <input
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                required
+                className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              />
+              <label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300">
+                Ich stimme der <a href="/datenschutz" className="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung</a> zu und erlaube die Verarbeitung meiner Daten für die Kontaktaufnahme. *
+              </label>
+            </div>
+
+            <div className="text-center pt-6">
+              <button
+                type="submit"
+                className="btn-primary px-12 py-4 text-lg"
+              >
+                Nachricht senden
+              </button>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                * Pflichtfelder
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   );
 } 

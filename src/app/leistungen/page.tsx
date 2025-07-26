@@ -29,7 +29,7 @@ export default function Leistungen() {
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
                   src="/images/leistungen/datev.jpg"
-                  alt="DATEV Logo"
+                  alt="DATEV Logo - Buchhaltungssoftware"
                   width={400}
                   height={120}
                   className="w-full h-auto object-contain max-h-20"
@@ -66,7 +66,7 @@ export default function Leistungen() {
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
                   src="/images/leistungen/ramicro.png"
-                  alt="RA-Micro Logo"
+                  alt="RA-Micro Logo - Kanzleisoftware"
                   width={400}
                   height={120}
                   className="w-full h-auto object-contain max-h-20"
@@ -103,7 +103,7 @@ export default function Leistungen() {
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
                   src="/images/leistungen/agenda.jpg"
-                  alt="Agenda Software Logo"
+                  alt="Agenda Software Logo - Terminverwaltung"
                   width={400}
                   height={120}
                   className="w-full h-auto object-contain max-h-20"
@@ -148,7 +148,7 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 ☁️
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -179,7 +179,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🔧
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -208,7 +208,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 📺
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -247,7 +247,7 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🖥️
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -275,7 +275,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🔒
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -303,7 +303,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🌐
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -332,7 +332,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🏢
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -371,7 +371,7 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 📹
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -399,7 +399,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🛡️
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -438,7 +438,7 @@ export default function Leistungen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 🚗
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -467,7 +467,7 @@ export default function Leistungen() {
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 📚
               </div>
               <h3 className="text-lg font-bold text-professional dark:text-white">
@@ -506,7 +506,7 @@ export default function Leistungen() {
         </p>
         <div className="flex flex-col sm:flex-row gap-8 justify-center">
           <a href="/kontakt" className="btn-primary">
-            Kontakt aufnehmen
+            Beratung anfragen
           </a>
           <a href="/preise" className="btn-secondary">
             Preise ansehen
