@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Kontakt */}
           <div className="text-center md:text-left">
-            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8 text-subtitle">
+            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8">
               Kontakt
             </h3>
             <div className="space-y-4 text-sm text-gray-600 dark:text-gray-200">
@@ -32,7 +32,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="text-center md:text-left md:border-l md:border-r border-gray-200 dark:border-gray-600 md:px-8">
-            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8 text-subtitle">
+            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8">
               Services
             </h3>
             <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-200">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Rechtliches */}
           <div className="text-center md:text-left">
-            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8 text-subtitle">
+            <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-8">
               Rechtliches
             </h3>
             <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-200">
