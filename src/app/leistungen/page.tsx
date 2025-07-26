@@ -162,15 +162,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datensicherung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Migration</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Professionelle Administration Ihrer Microsoft 365-Umgebung für maximale Produktivität und Sicherheit.
               </p>
               <a 
                 href="https://www.microsoft.com/de-de/microsoft-365?market=de" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
                 Mehr über Microsoft 365 →
               </a>
@@ -193,15 +193,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Konfiguration</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Beratung</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Sofortige Hilfe über das Internet. Viele Probleme können wir schnell und kostengünstig remote lösen.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Remote-Support starten →
+                Remote-Support anfragen →
               </a>
             </div>
           </div>
@@ -221,15 +221,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Technische Betreuung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Equipment Setup</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Professionelle Live-Streaming-Lösungen für Ihre Website und alle gängigen Streaming-Plattformen.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Streaming-Service buchen →
+                Streaming-Service anfragen →
               </a>
             </div>
           </div>
@@ -260,15 +260,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Performance-Optimierung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Backup-Strategien</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Professionelle Administration von Windows- und Linux-Netzwerken für maximale Stabilität und Sicherheit.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Administration beauftragen →
+                Server-Administration anfragen →
               </a>
             </div>
           </div>
@@ -288,15 +288,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Zugriffskontrolle</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Audits</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Umfassende Sicherheitslösungen für Ihr Netzwerk und Ihre Daten.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Sicherheitsberatung buchen →
+                Sicherheitsberatung anfragen →
               </a>
             </div>
           </div>
@@ -317,15 +317,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Drucker-Einrichtung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Heimnetzwerk-Setup</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Professionelle Einrichtung und Optimierung Ihres Heimnetzwerks für maximale Performance und Sicherheit.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Netzwerk-Setup beauftragen →
+                Netzwerk-Setup anfragen →
               </a>
             </div>
           </div>
@@ -345,15 +345,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Zugriff</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sichere Verbindungen</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Sichere und zuverlässige Vernetzung für weltweite Standorte und Home Office-Arbeitsplätze.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Filialvernetzung beauftragen →
+                Standortvernetzung anfragen →
               </a>
             </div>
           </div>
@@ -384,15 +384,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Remote-Überwachung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenspeicherung</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Professionelle Integration von Sicherheitskamera-Systemen in Ihr bestehendes Netzwerk.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Kamera-Integration beauftragen →
+                Kamera-Integration anfragen →
               </a>
             </div>
           </div>
@@ -412,15 +412,15 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Backup-Strategien</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Audits</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Umfassende Datenschutzlösungen und Compliance-Beratung für Ihr Unternehmen.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
-                Datenschutz-Beratung buchen →
+                Datenschutz-Beratung anfragen →
               </a>
             </div>
           </div>
@@ -452,13 +452,13 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datensicherung</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Virenentfernung</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Schnelle Hilfe direkt bei Ihnen vor Ort. Wir kommen zu Ihnen und lösen Ihre IT-Probleme professionell und zuverlässig.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200 mt-auto"
               >
                 Vor-Ort-Support buchen →
               </a>
@@ -481,13 +481,13 @@ export default function Leistungen() {
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Sicherheits-Tipps</div>
               <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Kaufberatung</div>
             </div>
-            <div className="min-h-[200px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+            <div className="flex flex-col flex-1">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                 Individuelle Schulungen und kompetente Beratung - damit Sie Ihre IT optimal nutzen können.
               </p>
               <a 
                 href="/kontakt" 
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200 mt-auto"
               >
                 Schulung buchen →
               </a>
