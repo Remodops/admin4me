@@ -7,6 +7,39 @@ export const metadata: Metadata = {
 
 const referenzen = [
   {
+    name: 'GOESYS AG',
+    logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
+    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
+    bullets: [
+      'IT-Systemhaus Services',
+      'Unternehmens-IT-Lösungen',
+      'Professionelle IT-Betreuung'
+    ],
+    website: 'https://goesys.de/'
+  },
+  {
+    name: 'BDS Mehrwert GmbH',
+    logo: '/images/references/bds-mehrwert.svg',
+    text: 'BDS Mehrwert GmbH – Exklusive Vorteilsangebote für BDS Bayern Mitglieder in den Bereichen KFZ, Versicherung, Vorsorge und Freizeit.',
+    bullets: [
+      'Vorteilsangebote für Mitglieder',
+      'Branchenbuch & Mediathek',
+      'KFZ Abrufschein-Service'
+    ],
+    website: 'https://www.bds-mehrwert.de/'
+  },
+  {
+    name: 'Bauverein Northeim eG',
+    logo: '/images/references/bauverein-logo.jpg.webp',
+    text: 'Bauverein Northeim eG – Seit 100 Jahren zuverlässiger Partner für Wohnraumversorgung in Northeim.',
+    bullets: [
+      'Wohnungsverwaltung',
+      'Genossenschaftliche Strukturen',
+      'Moderne Wohnanlagen'
+    ],
+    website: 'https://bauverein-northeim.de/'
+  },
+  {
     name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
     logo: '/images/references/lindigkeit.png',
     text: 'IT-Betreuung für Lindigkeit | Mertens – Moderne Lösungen für eine zukunftsorientierte Kanzlei.',
@@ -57,16 +90,6 @@ const referenzen = [
     ]
   },
   {
-    name: 'BDS Mehrwert GmbH',
-    logo: '/images/references/bds-mehrwert.svg',
-    text: 'BDS Mehrwert GmbH – Exklusive Vorteilsangebote für BDS Bayern Mitglieder in den Bereichen KFZ, Versicherung, Vorsorge und Freizeit.',
-    bullets: [
-      'Vorteilsangebote für Mitglieder',
-      'Branchenbuch & Mediathek',
-      'KFZ Abrufschein-Service'
-    ]
-  },
-  {
     name: 'Bayern Impulse',
     logo: '/images/references/bayern-impulse.png',
     text: 'Bayern Impulse – Innovative Lösungen und Impulse für die bayerische Wirtschaft.',
@@ -84,17 +107,8 @@ const referenzen = [
       'IT-Beratung & Consulting',
       'Systemadministration',
       'Netzwerk-Services'
-    ]
-  },
-  {
-    name: 'Bauverein Northeim eG',
-    logo: '/images/references/bauverein-logo.jpg.webp',
-    text: 'Bauverein Northeim eG – Seit 100 Jahren zuverlässiger Partner für Wohnraumversorgung in Northeim.',
-    bullets: [
-      'Wohnungsverwaltung',
-      'Genossenschaftliche Strukturen',
-      'Moderne Wohnanlagen'
-    ]
+    ],
+    website: 'http://www.it-fernsehen.de/'
   },
   {
     name: 'Barenberg Special Materials GmbH',
@@ -104,7 +118,8 @@ const referenzen = [
       'Wolfram Schmelzcarbid',
       'Up-Cycling Wolfram Metal Pulver',
       'F&E für Produktentwicklung'
-    ]
+    ],
+    website: 'https://barenberg.solutions/'
   },
   {
     name: 'RA Michael Forster',
@@ -114,7 +129,8 @@ const referenzen = [
       'Rechtsanwaltskanzlei',
       'IT-Sicherheit & Compliance',
       'Digitale Arbeitsprozesse'
-    ]
+    ],
+    website: 'https://www.ra-forster.eu/'
   },
   {
     name: 'Sehorz IT-Center',
@@ -124,17 +140,8 @@ const referenzen = [
       'Mediendesign & Webentwicklung',
       'Software-Entwicklung (seventox®)',
       'IT-Consulting & Storage-Experten'
-    ]
-  },
-  {
-    name: 'GOESYS AG',
-    logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
-    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
-    bullets: [
-      'IT-Systemhaus Services',
-      'Unternehmens-IT-Lösungen',
-      'Professionelle IT-Betreuung'
-    ]
+    ],
+    website: 'https://www.sehorz.de/'
   },
   {
     name: 'iS-Fun Internet Services GmbH',
@@ -144,7 +151,8 @@ const referenzen = [
       'Internet Services',
       'Maßgeschneiderte IT-Lösungen',
       'Moderne Webtechnologien'
-    ]
+    ],
+    website: 'https://www.is-fun.de/'
   },
 ];
 
@@ -171,11 +179,21 @@ export default function Referenzen() {
               />
               <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>
-              <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-2">
+              <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-4">
                 {ref.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start"><span className="text-blue-500 mr-2 mt-1">•</span>{bullet}</li>
                 ))}
               </ul>
+              {ref.website && (
+                <a 
+                  href={ref.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200 text-sm"
+                >
+                  Website besuchen →
+                </a>
+              )}
             </div>
           ))}
         </div>
