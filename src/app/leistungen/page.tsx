@@ -201,7 +201,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Remote-Support anfragen →
+                Remote-Support starten →
               </a>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Streaming-Service anfragen →
+                Streaming-Service buchen →
               </a>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Administration anfragen →
+                Administration beauftragen →
               </a>
             </div>
           </div>
@@ -296,7 +296,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Sicherheitsberatung anfragen →
+                Sicherheitsberatung buchen →
               </a>
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Netzwerk-Setup anfragen →
+                Netzwerk-Setup beauftragen →
               </a>
             </div>
           </div>
@@ -353,7 +353,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Filialvernetzung anfragen →
+                Filialvernetzung beauftragen →
               </a>
             </div>
           </div>
@@ -392,7 +392,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Kamera-Integration anfragen →
+                Kamera-Integration beauftragen →
               </a>
             </div>
           </div>
@@ -420,7 +420,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Datenschutz-Beratung anfragen →
+                Datenschutz-Beratung buchen →
               </a>
             </div>
           </div>
@@ -460,7 +460,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Vor-Ort-Support anfragen →
+                Vor-Ort-Support buchen →
               </a>
             </div>
           </div>
@@ -489,7 +489,7 @@ export default function Leistungen() {
                 href="/kontakt" 
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200"
               >
-                Schulung anfragen →
+                Schulung buchen →
               </a>
             </div>
           </div>
