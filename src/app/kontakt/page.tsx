@@ -98,7 +98,7 @@ export default function Kontakt() {
           </h2>
 
           <form 
-            action="https://formsubmit.co/wanja@herkt.email" 
+            action="https://formsubmit.co/info@admin4me.de" 
             method="POST" 
             target="_blank" 
             className="space-y-8"
