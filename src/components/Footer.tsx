@@ -100,7 +100,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-600 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-300 tracking-wide">
-            © 2024 admin4me. Alle Rechte vorbehalten.
+            © 2025 admin4me. Alle Rechte vorbehalten.
           </p>
         </div>
       </div>
