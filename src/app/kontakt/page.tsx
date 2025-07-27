@@ -97,7 +97,12 @@ export default function Kontakt() {
             Kontaktformular
           </h2>
 
-          <form className="space-y-8">
+          <form 
+            action="https://formsubmit.co/wanja@herkt.email" 
+            method="POST" 
+            target="_blank" 
+            className="space-y-8"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
