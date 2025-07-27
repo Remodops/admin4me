@@ -20,7 +20,6 @@ import ThemeToggle from './ThemeToggle';
 const navigation = [
   { name: 'Start', href: '/' },
   { name: 'Leistungen', href: '/leistungen' },
-  { name: 'Preise', href: '/preise' },
   { name: 'Referenzen', href: '/referenzen' },
   { name: 'Kontakt', href: '/kontakt' },
 ];

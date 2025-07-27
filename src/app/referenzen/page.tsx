@@ -15,7 +15,7 @@ const referenzen = [
       'Unternehmens-IT-Lösungen',
       'Professionelle IT-Betreuung'
     ],
-    website: 'https://goesys.de/'
+    website: 'https://www.goesys.de/'
   },
   {
     name: 'BDS Mehrwert GmbH',
@@ -37,7 +37,7 @@ const referenzen = [
       'Genossenschaftliche Strukturen',
       'Moderne Wohnanlagen'
     ],
-    website: 'https://bauverein-northeim.de/'
+    website: 'https://www.bauverein-northeim.de/'
   },
   {
     name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
@@ -47,7 +47,8 @@ const referenzen = [
       'Sichere E-Mail-Archivierung',
       'Datenschutz & Compliance',
       'Zuverlässige Serverwartung'
-    ]
+    ],
+    website: 'https://www.lindigkeit-partner.de/'
   },
   {
     name: 'Pape Martinihof GmbH & Co. KG',
@@ -57,7 +58,8 @@ const referenzen = [
       'Cloud-Lösungen für Dokumentenmanagement',
       'Schneller Vor-Ort-Service',
       'Netzwerkoptimierung'
-    ]
+    ],
+    website: 'https://pape-martinihof.de/'
   },
   {
     name: 'Bund der Selbständigen - Gewerbeverband Bayern e. V.',
@@ -67,7 +69,8 @@ const referenzen = [
       'Datensicherung & Backups',
       'IT-Support für Mitglieder',
       'Schulungen zu IT-Sicherheit'
-    ]
+    ],
+    website: 'https://www.bds-bayern.de/'
   },
   {
     name: 'Hilmer',
@@ -77,7 +80,8 @@ const referenzen = [
       'IT-Betreuung vor Ort',
       'Hardware-Beschaffung',
       'Schnelle Störungsbeseitigung'
-    ]
+    ],
+    website: 'https://www.hilmer-gmbh.de/'
   },
   {
     name: 'Nüske Transport und Landschaftsbau GmbH',
@@ -87,7 +91,8 @@ const referenzen = [
       'Mobile Arbeitsplatzlösungen',
       'GPS-Tracking für Fahrzeuge',
       'Wartung der IT-Infrastruktur'
-    ]
+    ],
+    website: 'https://www.nueske-landschaftsbau.de/'
   },
   {
     name: 'Bayern Impulse',
@@ -97,7 +102,8 @@ const referenzen = [
       'Wirtschaftsförderung',
       'Innovationsberatung',
       'Regionale Entwicklung'
-    ]
+    ],
+    website: 'https://www.bayern-impulse.de/'
   },
   {
     name: 'IT Fernsehen UG',
@@ -108,7 +114,7 @@ const referenzen = [
       'Systemadministration',
       'Netzwerk-Services'
     ],
-    website: 'http://www.it-fernsehen.de/'
+    website: 'https://www.it-fernsehen.de/'
   },
   {
     name: 'Barenberg Special Materials GmbH',
