@@ -39,10 +39,12 @@ export default function Impressum() {
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Vertreten durch
+                Inhaber
               </h3>
               <p>
-                Geschäftsführer: Lothar Frank
+                Lothar Frank<br />
+                Lange Straße 4<br />
+                37186 Moringen
               </p>
             </div>
 
@@ -58,11 +60,35 @@ export default function Impressum() {
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Steuernummer
+              </h3>
+              <p className="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg border-l-4 border-yellow-400">
+                <strong>⚠️ EINZUTRAGEN:</strong><br />
+                Steuernummer: [IHRE_STEUERNUMMER_HIER_EINTRAGEN]<br />
+                <span className="text-sm text-gray-500">(Erhalten Sie vom Finanzamt bei der Gewerbeanmeldung)</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Umsatzsteuer-ID
               </h3>
-              <p>
+              <p className="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg border-l-4 border-yellow-400">
+                <strong>⚠️ EINZUTRAGEN:</strong><br />
                 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE123456789 (Beispiel - bitte durch echte USt-ID ersetzen)
+                [IHRE_UST_ID_HIER_EINTRAGEN]<br />
+                <span className="text-sm text-gray-500">(Nur erforderlich bei Umsätzen über 22.000€/Jahr oder grenzüberschreitenden Lieferungen)</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Gewerberecht
+              </h3>
+              <p>
+                Gewerbeanmeldung gemäß § 14 GewO<br />
+                Zuständige Behörde: Stadt Moringen<br />
+                Gewerbeschein-Nr.: <span className="bg-yellow-50 dark:bg-yellow-900/20 px-2 py-1 rounded">[GEWERBESCHEIN_NR_HIER_EINTRAGEN]</span>
               </p>
             </div>
 
