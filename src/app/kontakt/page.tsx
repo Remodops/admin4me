@@ -65,6 +65,7 @@ export default function Kontakt() {
           phone: formData.phone,
           subject: formData.subject,
           message: formData.message,
+          website: formData.website, // Honeypot-Feld mitsenden
         }),
       });
 
@@ -75,16 +76,17 @@ export default function Kontakt() {
           type: 'success',
           message: result.message
         });
-        // Formular zurücksetzen
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
-          privacy: false
-        });
+                 // Formular zurücksetzen
+         setFormData({
+           firstName: '',
+           lastName: '',
+           email: '',
+           phone: '',
+           subject: '',
+           message: '',
+           privacy: false,
+           website: ''
+         });
       } else {
         setSubmitStatus({
           type: 'error',
@@ -297,19 +299,32 @@ export default function Kontakt() {
               ></textarea>
             </div>
 
-            <div className="flex items-start space-x-3">
-              <input
-                type="checkbox"
-                id="privacy"
-                name="privacy"
-                checked={formData.privacy}
-                onChange={handleInputChange}
-                className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-              />
-              <label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300">
-                Ich stimme der <a href="/datenschutz" className="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung</a> zu und erlaube die Verarbeitung meiner Daten für die Kontaktaufnahme. *
-              </label>
-            </div>
+                         {/* Honeypot-Feld - für normale Benutzer unsichtbar */}
+             <div className="absolute left-[-9999px] opacity-0 pointer-events-none">
+               <input
+                 type="text"
+                 name="website"
+                 value={formData.website}
+                 onChange={handleInputChange}
+                 tabIndex={-1}
+                 autoComplete="off"
+                 aria-hidden="true"
+               />
+             </div>
+
+             <div className="flex items-start space-x-3">
+               <input
+                 type="checkbox"
+                 id="privacy"
+                 name="privacy"
+                 checked={formData.privacy}
+                 onChange={handleInputChange}
+                 className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+               />
+               <label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300">
+                 Ich stimme der <a href="/datenschutz" className="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung</a> zu und erlaube die Verarbeitung meiner Daten für die Kontaktaufnahme. *
+               </label>
+             </div>
 
             {/* Statusmeldungen */}
             {submitStatus.type && (

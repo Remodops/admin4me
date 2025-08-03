@@ -13,7 +13,17 @@ const sesClient = new SESClient({
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, subject, message } = body;
+    const { firstName, lastName, email, phone, subject, message, website } = body;
+
+    // Honeypot-Check: Wenn das versteckte Feld ausgefüllt ist, ist es wahrscheinlich Spam
+    if (website) {
+      console.log('Honeypot triggered - likely spam');
+      // Wir geben trotzdem eine Erfolgsmeldung zurück, um dem Bot nicht zu verraten, dass er erkannt wurde
+      return NextResponse.json(
+        { message: 'Ihre Nachricht wurde erfolgreich gesendet' },
+        { status: 200 }
+      );
+    }
 
     // Validierung der Pflichtfelder
     if (!firstName || !lastName || !email || !subject || !message) {
