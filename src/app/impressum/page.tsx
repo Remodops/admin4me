@@ -32,19 +32,10 @@ export default function Impressum() {
               </h3>
               <p className="text-sm">
                 admin4me<br />
+                Inhaber: Lothar Frank<br />
                 Lange Straße 4<br />
-                37186 Moringen
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1">
-                Inhaber & redaktionell verantwortlich
-              </h3>
-              <p className="text-sm">
-                Lothar Frank<br />
-                Lange Straße 4<br />
-                37186 Moringen
+                37186 Moringen<br />
+                Deutschland
               </p>
             </div>
 
@@ -54,7 +45,7 @@ export default function Impressum() {
               </h3>
               <p className="text-sm">
                 Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline">05554-7249063</a><br />
-                Kontaktformular: <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline">Kontaktseite</a>
+                E-Mail: siehe <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline">Kontaktformular</a>
               </p>
             </div>
 
@@ -63,8 +54,27 @@ export default function Impressum() {
                 Umsatzsteuer-ID
               </h3>
               <p className="text-sm">
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE348411538
+                DE348411538<br />
+                (vergeben durch das Bundeszentralamt für Steuern)
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1">
+                Gewerbeanmeldung
+              </h3>
+              <p className="text-sm">
+                Gewerbeanmeldung gemäß § 14 GewO bei der Stadt Moringen.<br />
+                Die Tätigkeit unterliegt keiner behördlichen Zulassungspflicht.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1">
+                Redaktionell verantwortlich
+              </h3>
+              <p className="text-sm">
+                Lothar Frank, Lange Straße 4, 37186 Moringen
               </p>
             </div>
 
