@@ -32,23 +32,16 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
-      <section className="text-center mb-32">
-        <h1 className="heading-xl text-gray-900 dark:text-white mb-10">
-          Professioneller IT-Support
+      <section className="text-center mb-16">
+        <h1 className="heading-xl text-gray-900 dark:text-white mb-6">
+          Admin4me
         </h1>
         <p className="text-subtitle dark:text-gray-300 mb-8">
-          IT-Administration & Support
+          Ihr professioneller IT-Support
         </p>
-        <p className="text-enhanced text-gray-700 dark:text-gray-300 mb-20 max-w-3xl mx-auto">
+        <p className="text-enhanced text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
-
-        <Link
-          href="/kontakt"
-          className="btn-primary"
-        >
-          Kontakt aufnehmen
-        </Link>
       </section>
 
       {/* CTA Section */}
