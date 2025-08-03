@@ -7,15 +7,15 @@ export const metadata: Metadata = {
 
 const referenzen = [
   {
-    name: 'GOESYS AG',
-    logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
-    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
+    name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
+    logo: '/images/references/lindigkeit.png',
+    text: 'Rechtsanwalt, Kanzlei und Notariat',
     bullets: [
-      'IT-Systemhaus Services',
-      'Unternehmens-IT-Lösungen',
-      'Professionelle IT-Betreuung'
+      'Sichere E-Mail-Archivierung',
+      'Datenschutz & Compliance',
+      'Zuverlässige Serverwartung'
     ],
-    website: 'https://www.goesys.de/'
+    website: 'https://www.lindigkeit-partner.de/'
   },
   {
     name: 'BDS Mehrwert GmbH',
@@ -40,26 +40,15 @@ const referenzen = [
     website: 'https://www.bauverein-northeim.de/'
   },
   {
-    name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
-    logo: '/images/references/lindigkeit.png',
-    text: 'IT-Betreuung für Lindigkeit | Mertens – Moderne Lösungen für eine zukunftsorientierte Kanzlei.',
+    name: 'GOESYS AG',
+    logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
+    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
     bullets: [
-      'Sichere E-Mail-Archivierung',
-      'Datenschutz & Compliance',
-      'Zuverlässige Serverwartung'
+      'IT-Systemhaus Services',
+      'Unternehmens-IT-Lösungen',
+      'Professionelle IT-Betreuung'
     ],
-    website: 'https://www.lindigkeit-partner.de/'
-  },
-  {
-    name: 'Pape Martinihof GmbH & Co. KG',
-    logo: '/images/references/pape.png',
-    text: 'Digitalisierung und Support für Pape Martinihof – Effiziente Prozesse, zufriedene Mitarbeiter.',
-    bullets: [
-      'Cloud-Lösungen für Dokumentenmanagement',
-      'Schneller Vor-Ort-Service',
-      'Netzwerkoptimierung'
-    ],
-    website: 'https://pape-martinihof.de/'
+    website: 'https://www.goesys.de/'
   },
   {
     name: 'Bund der Selbständigen - Gewerbeverband Bayern e. V.',
