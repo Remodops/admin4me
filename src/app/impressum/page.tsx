@@ -70,27 +70,7 @@ export default function Impressum() {
               </p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Gewerberecht
-              </h3>
-              <p>
-                Gewerbeanmeldung gemäß § 14 GewO<br />
-                Zuständige Behörde: Stadt Moringen<br />
-                Gewerbeschein-Nr.: <span className="bg-yellow-50 dark:bg-yellow-900/20 px-2 py-1 rounded">[GEWERBESCHEIN_NR_HIER_EINTRAGEN]</span>
-              </p>
-            </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Berufsbezeichnung und berufsrechtliche Regelungen
-              </h3>
-              <p>
-                Berufsbezeichnung: IT-Administrator<br />
-                Zuständige Kammer: IHK Hannover<br />
-                Verliehen durch: Deutschland
-              </p>
-            </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
