@@ -18,49 +18,12 @@ export default function Leistungen() {
         </p>
       </div>
 
-      {/* Software-Support Services */}
+      {/* Anwalts- und Notariatssoftware */}
       <section className="mb-40">
         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Software-Support & Beratung
+          Anwalts- und Notariatssoftware
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="text-center mb-8">
-              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
-                <Image
-                  src="/images/leistungen/datev.jpg"
-                  alt="DATEV Logo - Buchhaltungssoftware"
-                  width={400}
-                  height={120}
-                  className="w-full h-auto object-contain max-h-20"
-                  style={{ imageRendering: 'auto' }}
-                />
-              </div>
-              <h3 className="text-lg font-bold text-professional dark:text-white">
-                DATEV Support
-              </h3>
-            </div>
-            <div className="space-y-2 mb-8">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation & Updates</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Konfiguration</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Troubleshooting</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenmigration</div>
-            </div>
-            <div className="min-h-[220px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
-                Professioneller DATEV Installations- und Update Service mit individueller Beratung und umfassender Betreuung für alle DATEV-Produkte.
-              </p>
-              <a 
-                href="https://www.datev.de" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
-              >
-                Mehr über DATEV →
-              </a>
-            </div>
-          </div>
-
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
@@ -94,43 +57,6 @@ export default function Leistungen() {
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
                 Mehr über RA-Micro →
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
-            <div className="text-center mb-8">
-              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
-                <Image
-                  src="/images/leistungen/agenda.jpg"
-                  alt="Agenda Software Logo - Terminverwaltung"
-                  width={400}
-                  height={120}
-                  className="w-full h-auto object-contain max-h-20"
-                  style={{ imageRendering: 'auto' }}
-                />
-              </div>
-              <h3 className="text-lg font-bold text-professional dark:text-white">
-                Agenda Support
-              </h3>
-            </div>
-            <div className="space-y-2 mb-8">
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Erst Support</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Schulung</div>
-              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Wartung</div>
-            </div>
-            <div className="min-h-[220px] flex flex-col">
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
-                Kompetenter Support für Agenda-Software mit Installation, Schulung und laufender Betreuung und zuverlässigem Support bei Softwareproblemen im Kanzleialltag.
-              </p>
-              <a 
-                href="https://www.agenda-software.de/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
-              >
-                Mehr über Agenda →
               </a>
             </div>
           </div>
@@ -205,6 +131,88 @@ export default function Leistungen() {
                 className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
               >
                 Mehr über Bundesnotarkammer →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Software-Support Services */}
+      <section className="mb-40">
+        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+          Software-Support & Beratung
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="text-center mb-8">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
+                <Image
+                  src="/images/leistungen/datev.jpg"
+                  alt="DATEV Logo - Buchhaltungssoftware"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain max-h-20"
+                  style={{ imageRendering: 'auto' }}
+                />
+              </div>
+              <h3 className="text-lg font-bold text-professional dark:text-white">
+                DATEV Support
+              </h3>
+            </div>
+            <div className="space-y-2 mb-8">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation & Updates</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Konfiguration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Troubleshooting</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenmigration</div>
+            </div>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Professioneller DATEV Installations- und Update Service mit individueller Beratung und umfassender Betreuung für alle DATEV-Produkte.
+              </p>
+              <a 
+                href="https://www.datev.de" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
+              >
+                Mehr über DATEV →
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="text-center mb-8">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
+                <Image
+                  src="/images/leistungen/agenda.jpg"
+                  alt="Agenda Software Logo - Terminverwaltung"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain max-h-20"
+                  style={{ imageRendering: 'auto' }}
+                />
+              </div>
+              <h3 className="text-lg font-bold text-professional dark:text-white">
+                Agenda Support
+              </h3>
+            </div>
+            <div className="space-y-2 mb-8">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Erst Support</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Schulung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Wartung</div>
+            </div>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Kompetenter Support für Agenda-Software mit Installation, Schulung und laufender Betreuung und zuverlässigem Support bei Softwareproblemen im Kanzleialltag.
+              </p>
+              <a 
+                href="https://www.agenda-software.de/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
+              >
+                Mehr über Agenda →
               </a>
             </div>
           </div>
