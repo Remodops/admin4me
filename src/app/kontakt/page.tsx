@@ -1,11 +1,94 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Kontakt – admin4me",
-  description: "So erreichen Sie uns: E-Mail, Telefon, Adresse. IT-Administration und Support in Moringen und Umgebung.",
-};
+import { useState } from "react";
 
 export default function Kontakt() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+    privacy: false
+  });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.privacy) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Bitte stimmen Sie der Datenschutzerklärung zu.'
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: result.message
+        });
+        // Formular zurücksetzen
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+          privacy: false
+        });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.error || 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
       {/* Header */}
@@ -98,6 +181,7 @@ export default function Kontakt() {
           </h2>
 
           <form 
+            onSubmit={handleSubmit}
             className="space-y-8"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -109,6 +193,8 @@ export default function Kontakt() {
                   type="text"
                   id="firstName"
                   name="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
@@ -122,6 +208,8 @@ export default function Kontakt() {
                   type="text"
                   id="lastName"
                   name="lastName"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
@@ -137,6 +225,8 @@ export default function Kontakt() {
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
@@ -150,6 +240,8 @@ export default function Kontakt() {
                   type="tel"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
               </div>
@@ -162,6 +254,8 @@ export default function Kontakt() {
               <select
                 id="subject"
                 name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
               >
@@ -184,6 +278,8 @@ export default function Kontakt() {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 required
                 rows={6}
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors resize-vertical"
@@ -195,7 +291,8 @@ export default function Kontakt() {
                 type="checkbox"
                 id="privacy"
                 name="privacy"
-                required
+                checked={formData.privacy}
+                onChange={handleInputChange}
                 className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
               />
               <label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300">
@@ -203,13 +300,32 @@ export default function Kontakt() {
               </label>
             </div>
 
+            {/* Statusmeldungen */}
+            {submitStatus.type && (
+              <div className={`p-4 rounded-lg ${
+                submitStatus.type === 'success' 
+                  ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800' 
+                  : 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
+              }`}>
+                <p className={`text-sm font-medium ${
+                  submitStatus.type === 'success' 
+                    ? 'text-green-800 dark:text-green-200' 
+                    : 'text-red-800 dark:text-red-200'
+                }`}>
+                  {submitStatus.message}
+                </p>
+              </div>
+            )}
+
             <div className="text-center pt-6">
               <button
-                type="button"
-                className="btn-primary px-12 py-4 text-lg"
-                disabled
+                type="submit"
+                disabled={isSubmitting}
+                className={`btn-primary px-12 py-4 text-lg ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
               >
-                Nachricht senden
+                {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
               </button>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
                 * Pflichtfelder
