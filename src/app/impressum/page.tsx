@@ -14,7 +14,7 @@ export default function Impressum() {
           Impressum
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300">
-          Rechtliche Informationen und Kontaktdaten.
+          Rechtliche Informationen und Kontaktdaten
         </p>
       </section>
 
