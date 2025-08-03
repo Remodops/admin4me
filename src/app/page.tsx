@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional mb-32 mt-16">
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional mb-8 mt-16">
         <h2 className="heading-md text-professional dark:text-white mb-10">
           Bereit für professionellen IT-Support?
         </h2>
