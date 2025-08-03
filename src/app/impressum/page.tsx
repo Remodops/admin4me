@@ -53,7 +53,7 @@ export default function Impressum() {
                 Kontakt
               </h3>
               <p>
-                Telefon: <a href="tel:055544074740" className="text-blue-600 dark:text-blue-400 hover:underline">05554 4074740</a><br />
+                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline">05554-7249063</a><br />
                 E-Mail: <a href="mailto:info@admin4me.de" className="text-blue-600 dark:text-blue-400 hover:underline">info@admin4me.de</a>
               </p>
             </div>
@@ -73,11 +73,9 @@ export default function Impressum() {
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Umsatzsteuer-ID
               </h3>
-              <p className="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg border-l-4 border-yellow-400">
-                <strong>⚠️ EINZUTRAGEN:</strong><br />
+              <p>
                 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                [IHRE_UST_ID_HIER_EINTRAGEN]<br />
-                <span className="text-sm text-gray-500">(Nur erforderlich bei Umsätzen über 22.000€/Jahr oder grenzüberschreitenden Lieferungen)</span>
+                DE348411538
               </p>
             </div>
 
