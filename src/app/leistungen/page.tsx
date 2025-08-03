@@ -14,7 +14,7 @@ export default function Leistungen() {
           Unsere Leistungen
         </h1>
         <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-          Professionelle IT-Services für Privatpersonen und kleine Unternehmen in Moringen und Umgebung
+          Professionelle IT-Services für Privatpersonen und Mittelstand: Deutschlandweit
         </p>
       </div>
 
