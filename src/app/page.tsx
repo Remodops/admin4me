@@ -3,6 +3,13 @@
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 
+const scrollToProblems = () => {
+  const problemsSection = document.getElementById('it-probleme');
+  if (problemsSection) {
+    problemsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function Home() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
@@ -42,10 +49,31 @@ export default function Home() {
         <p className="text-enhanced text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
+        
+        {/* Scroll Arrow */}
+        <button
+          onClick={scrollToProblems}
+          className="mt-8 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-600 group"
+          aria-label="Zu den IT-Problemen scrollen"
+        >
+          <svg 
+            className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-professional transition-colors duration-300" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+            />
+          </svg>
+        </button>
       </section>
 
       {/* Typische IT-Probleme Section */}
-      <section className="mb-24">
+      <section id="it-probleme" className="mb-24">
         <h2 className="heading-lg text-professional dark:text-white text-center mb-16">
           Typische IT-Probleme
         </h2>
