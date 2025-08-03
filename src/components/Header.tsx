@@ -51,7 +51,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-white dark:bg-gray-900 border-b border-professional dark:border-gray-700 sticky top-0 z-50 shadow-sm">
+    <header className="bg-gradient-to-r from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 border-b-2 border-blue-200 dark:border-gray-600 sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
       <nav className="mx-auto max-w-content px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -71,11 +71,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg px-3 py-2 ${
+                className={`text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg px-4 py-2.5 ${
                   pathname === item.href
-                    ? 'text-white bg-gradient-professional shadow-sm dark:bg-blue-900 dark:text-white'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white dark:hover:bg-blue-900 dark:hover:bg-gray-800'
-                }`.replace('bg-gradient-professional shadow-sm dark:bg-blue-900 dark:text-white', 'shadow-sm bg-gradient-professional text-white dark:bg-blue-900 dark:text-white')}
+                    ? 'text-white bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 shadow-lg transform scale-105'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-700 hover:shadow-md hover:transform hover:scale-105'
+                }`}
               >
                 {item.name}
               </Link>
@@ -89,7 +89,7 @@ export default function Header() {
           <div className="flex md:hidden">
             <button
               type="button"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-professional dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
+              className="p-2.5 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg transition-all duration-200 hover:shadow-md"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
@@ -106,7 +106,7 @@ export default function Header() {
         {/* Mobile navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden">
-            <div className="space-y-2 pb-6 pt-4 border-t border-professional dark:border-gray-700">
+            <div className="space-y-2 pb-6 pt-4 border-t-2 border-blue-200 dark:border-gray-600 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-gray-800/50 dark:to-transparent rounded-b-lg">
               {navigation.map((item) => (
                 <Link
                   key={item.name}

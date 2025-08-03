@@ -641,29 +641,48 @@ input:focus, textarea:focus, select:focus {
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     text-decoration: none;
+    margin: 0.25rem 0;
   }
   
   .mobile-nav-link:hover {
-    background-color: #f3f4f6;
-    transform: translateX(4px);
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    transform: translateX(6px) scale(1.02);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
   }
   
   .dark .mobile-nav-link:hover {
-    background-color: var(--dark-card) !important;
-    color: var(--dark-heading) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
   }
   
   .mobile-nav-link.active {
-    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-600) 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: white;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+    transform: scale(1.05);
   }
   
   .dark .mobile-nav-link.active {
-    background: linear-gradient(135deg, #1F47FF 0%, #355CFF 100%) !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
     color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
   }
+}
+
+/* Header Navigation Verbesserungen */
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+}
+
+.dark header:hover {
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.25);
 }
 
 /* Problem box styling */
