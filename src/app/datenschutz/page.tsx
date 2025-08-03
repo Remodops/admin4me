@@ -120,7 +120,7 @@ export default function Datenschutz() {
                 Lothar Frank<br />
                 Lange Straße 4<br />
                 37186 Moringen<br />
-                Telefon: <a href="tel:055544074740" className="text-blue-600 dark:text-blue-400 hover:underline">05554 4074740</a><br />
+                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline">05554-7249063</a><br />
                 E-Mail: <a href="mailto:info@admin4me.de" className="text-blue-600 dark:text-blue-400 hover:underline">info@admin4me.de</a>
               </p>
               <p className="mt-4">

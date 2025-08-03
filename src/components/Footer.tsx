@@ -16,7 +16,7 @@ export default function Footer() {
                   href="tel:055544074740" 
                   className="hover:text-professional dark:hover:text-blue-300 transition-all duration-200 font-medium tracking-wide hover:underline"
                 >
-                  📞 05554 4074740
+                  📞 05554-7249063
                 </a>
               </div>
               <div>
