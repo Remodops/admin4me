@@ -58,16 +58,7 @@ export default function Impressum() {
               </p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Steuernummer
-              </h3>
-              <p className="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg border-l-4 border-yellow-400">
-                <strong>⚠️ EINZUTRAGEN:</strong><br />
-                Steuernummer: [IHRE_STEUERNUMMER_HIER_EINTRAGEN]<br />
-                <span className="text-sm text-gray-500">(Erhalten Sie vom Finanzamt bei der Gewerbeanmeldung)</span>
-              </p>
-            </div>
+
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
