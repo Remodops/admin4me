@@ -149,6 +149,17 @@ const referenzen = [
     ],
     website: 'https://www.is-fun.de/'
   },
+  {
+    name: 'Biogas',
+    logo: '/images/references/biogas.png',
+    text: 'Biogas – Innovative Lösungen für nachhaltige Energiegewinnung und Umwelttechnologie.',
+    bullets: [
+      'Nachhaltige Energiegewinnung',
+      'Umwelttechnologie',
+      'Innovative Biogas-Lösungen'
+    ],
+    website: 'https://intranet.biogas.org/edcom/webfvb.nsf/id/DE_Homepage'
+  },
 ];
 
 export default function Referenzen() {
