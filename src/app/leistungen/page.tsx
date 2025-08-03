@@ -23,7 +23,7 @@ export default function Leistungen() {
         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
           Anwalts- und Notariatssoftware
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
@@ -142,7 +142,7 @@ export default function Leistungen() {
         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
           Software-Support & Beratung
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
@@ -227,7 +227,7 @@ export default function Leistungen() {
         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
           Modernes Arbeiten mit Cloud-Technologie und Online-Kommunikation.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
@@ -318,15 +318,15 @@ export default function Leistungen() {
         </div>
       </section>
 
-      {/* IT Infrastructure & Networks */}
-      <section className="mb-40">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Netzwerke & Systembetrieb
-        </h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Stabilität, Sicherheit und Administration Ihrer IT-Infrastruktur.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+             {/* IT Infrastructure & Networks */}
+       <section className="mb-40">
+         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+           Netzwerke & Systembetrieb
+         </h2>
+         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+           Stabilität, Sicherheit und Administration Ihrer IT-Infrastruktur.
+         </p>
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
@@ -442,15 +442,15 @@ export default function Leistungen() {
         </div>
       </section>
 
-      {/* Security & Monitoring */}
-      <section className="mb-40">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          IT-Sicherheit & Überwachung
-        </h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Komplette Sicherheitslösungen für Ihr Unternehmen.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+             {/* Security & Monitoring */}
+       <section className="mb-40">
+         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+           IT-Sicherheit & Überwachung
+         </h2>
+         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+           Komplette Sicherheitslösungen für Ihr Unternehmen.
+         </p>
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
@@ -509,15 +509,15 @@ export default function Leistungen() {
         </div>
       </section>
 
-      {/* IT Support & Training */}
-      <section className="mb-40">
-        <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
-          Beratung & Betreuung
-        </h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Endkundennah, direkt umsetzbar - professioneller IT-Support und individuelle Schulungen.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+             {/* IT Support & Training */}
+       <section className="mb-40">
+         <h2 className="heading-lg text-gray-900 dark:text-white text-center mb-16">
+           Beratung & Betreuung
+         </h2>
+         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+           Endkundennah, direkt umsetzbar - professioneller IT-Support und individuelle Schulungen.
+         </p>
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" aria-hidden="true">
