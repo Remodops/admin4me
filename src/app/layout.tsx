@@ -46,9 +46,25 @@ export default function RootLayout({
     <html lang="de" className="transition-colors duration-300">
       <body className={`${inter.variable} font-sans antialiased transition-colors duration-300`}>
         <ThemeProvider>
+          {/* Skip-Links für Barrierefreiheit */}
+          <div className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50">
+            <a 
+              href="#main-content" 
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Zum Hauptinhalt springen
+            </a>
+            <a 
+              href="#navigation" 
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg ml-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Zur Navigation springen
+            </a>
+          </div>
+          
           <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
             <Header />
-            <main className="flex-1 flex flex-col">
+            <main id="main-content" className="flex-1 flex flex-col" role="main" tabIndex={-1}>
               {children}
             </main>
             <Footer />

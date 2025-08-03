@@ -19,38 +19,38 @@ export default function Impressum() {
       </section>
 
       {/* Content */}
-      <section className="prose prose-gray dark:prose-invert max-w-none">
+      <section className="prose prose-gray dark:prose-invert max-w-none" role="main">
         <div className="bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
             Angaben gemäß § 5 TMG
           </h2>
           
           {/* Einfaches, sauberes Layout */}
-          <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300">
-            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+          <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300" role="list">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4" role="listitem">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                 Diensteanbieter
               </h3>
-              <p className="text-sm leading-relaxed">
+              <address className="text-sm leading-relaxed not-italic">
                 admin4me<br />
                 Inhaber: Lothar Frank<br />
                 Lange Straße 4<br />
                 37186 Moringen<br />
                 Deutschland
-              </p>
+              </address>
             </div>
 
-            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4" role="listitem">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                 Kontakt
               </h3>
               <p className="text-sm leading-relaxed">
-                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">05554-7249 063</a><br />
-                E-Mail: über das <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Kontaktformular</a>
+                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium" aria-label="Telefonnummer 05554-7249 063 anrufen">05554-7249 063</a><br />
+                E-Mail: über das <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline font-medium" aria-label="Zum Kontaktformular">Kontaktformular</a>
               </p>
             </div>
 
-            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4" role="listitem">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                 Umsatzsteuer-ID
               </h3>
@@ -60,7 +60,7 @@ export default function Impressum() {
               </p>
             </div>
 
-            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4" role="listitem">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                 Gewerbeanmeldung
               </h3>
@@ -70,35 +70,35 @@ export default function Impressum() {
               </p>
             </div>
 
-            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4" role="listitem">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                 Redaktionell verantwortlich
               </h3>
-                             <p className="text-sm leading-relaxed">
+                             <address className="text-sm leading-relaxed not-italic">
                  Lothar Frank<br />
                  Lange Straße 4<br />
                  37186 Moringen
-               </p>
+               </address>
             </div>
           </div>
 
           {/* Rechtliche Hinweise */}
           <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-600">
-            <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300">
-              <div>
+            <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300" role="list">
+              <div role="listitem">
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                   EU-Streitschlichtung
                 </h3>
                 <p className="text-sm leading-relaxed">
                   Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-                  <a href="https://ec.europa.eu/consumers/odr/" className="text-blue-600 dark:text-blue-400 hover:underline ml-1">
+                  <a href="https://ec.europa.eu/consumers/odr/" className="text-blue-600 dark:text-blue-400 hover:underline ml-1" aria-label="Externer Link zur EU-Streitschlichtungsplattform">
                     https://ec.europa.eu/consumers/odr/
                   </a>.<br />
-                  Kontakt über unser <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline">Kontaktformular</a>.
+                  Kontakt über unser <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline" aria-label="Zum Kontaktformular">Kontaktformular</a>.
                 </p>
               </div>
 
-              <div>
+              <div role="listitem">
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                   Verbraucherstreitbeilegung
                 </h3>
@@ -108,7 +108,7 @@ export default function Impressum() {
                 </p>
               </div>
 
-              <div>
+              <div role="listitem">
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                   Haftung für Inhalte
                 </h3>
@@ -126,7 +126,7 @@ export default function Impressum() {
                 </p>
               </div>
 
-              <div>
+              <div role="listitem">
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                   Haftung für Links
                 </h3>
@@ -144,7 +144,7 @@ export default function Impressum() {
                 </p>
               </div>
 
-              <div>
+              <div role="listitem">
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
                   Urheberrecht
                 </h3>

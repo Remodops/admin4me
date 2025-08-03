@@ -127,10 +127,10 @@ export default function Kontakt() {
             Kontaktieren Sie uns über Ihren bevorzugten Kommunikationsweg.
           </p>
           
-          <div className="space-y-10">
-            <div className="flex items-start lg:justify-start justify-center">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <div className="space-y-10" role="list">
+            <div className="flex items-start lg:justify-start justify-center" role="listitem">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional" aria-hidden="true">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -141,15 +141,16 @@ export default function Kontakt() {
                 <a
                   href="mailto:info@admin4me.de"
                   className="text-accent dark:text-blue-400 hover:text-professional dark:hover:text-blue-300 transition-all duration-200 font-semibold text-lg tracking-wide"
+                  aria-label="E-Mail an info@admin4me.de senden"
                 >
                   info@admin4me.de
                 </a>
               </div>
             </div>
 
-            <div className="flex items-start lg:justify-start justify-center">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div className="flex items-start lg:justify-start justify-center" role="listitem">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional" aria-hidden="true">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
@@ -160,15 +161,16 @@ export default function Kontakt() {
                 <a
                   href="tel:055544074740"
                   className="text-accent dark:text-blue-400 hover:text-professional dark:hover:text-blue-300 transition-all duration-200 font-semibold text-lg tracking-wide"
+                  aria-label="Telefonnummer 05554-7249 063 anrufen"
                 >
                   05554-7249 063
                 </a>
               </div>
             </div>
 
-            <div className="flex items-start lg:justify-start justify-center">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div className="flex items-start lg:justify-start justify-center" role="listitem">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mr-8 shadow-professional" aria-hidden="true">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -196,11 +198,12 @@ export default function Kontakt() {
           <form 
             onSubmit={handleSubmit}
             className="space-y-8"
+            aria-label="Kontaktformular"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                  Vorname *
+                  Vorname <span className="text-red-500" aria-label="Pflichtfeld">*</span>
                 </label>
                 <input
                   type="text"
@@ -209,13 +212,14 @@ export default function Kontakt() {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   required
+                  aria-required="true"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
               </div>
               
               <div>
                 <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                  Nachname *
+                  Nachname <span className="text-red-500" aria-label="Pflichtfeld">*</span>
                 </label>
                 <input
                   type="text"
@@ -224,6 +228,7 @@ export default function Kontakt() {
                   value={formData.lastName}
                   onChange={handleInputChange}
                   required
+                  aria-required="true"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
               </div>
@@ -232,7 +237,7 @@ export default function Kontakt() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                  E-Mail-Adresse *
+                  E-Mail-Adresse <span className="text-red-500" aria-label="Pflichtfeld">*</span>
                 </label>
                 <input
                   type="email"
@@ -241,6 +246,7 @@ export default function Kontakt() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
+                  aria-required="true"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
                 />
               </div>
@@ -262,7 +268,7 @@ export default function Kontakt() {
 
             <div>
               <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                Betreff *
+                Betreff <span className="text-red-500" aria-label="Pflichtfeld">*</span>
               </label>
               <select
                 id="subject"
@@ -270,6 +276,7 @@ export default function Kontakt() {
                 value={formData.subject}
                 onChange={handleInputChange}
                 required
+                aria-required="true"
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
               >
                 <option value="">Bitte wählen Sie einen Betreff</option>
@@ -286,7 +293,7 @@ export default function Kontakt() {
 
             <div>
               <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                Ihre Nachricht *
+                Ihre Nachricht <span className="text-red-500" aria-label="Pflichtfeld">*</span>
               </label>
               <textarea
                 id="message"
@@ -294,9 +301,14 @@ export default function Kontakt() {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
+                aria-required="true"
                 rows={6}
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors resize-vertical"
+                aria-describedby="message-help"
               ></textarea>
+              <div id="message-help" className="sr-only">
+                Bitte beschreiben Sie Ihr Anliegen oder Ihre Frage so detailliert wie möglich.
+              </div>
             </div>
 
                          {/* Honeypot-Feld - für normale Benutzer unsichtbar */}
@@ -319,20 +331,26 @@ export default function Kontakt() {
                  name="privacy"
                  checked={formData.privacy}
                  onChange={handleInputChange}
+                 required
+                 aria-required="true"
                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                />
                <label htmlFor="privacy" className="text-sm text-gray-600 dark:text-gray-300">
-                 Ich stimme der <a href="/datenschutz" className="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung</a> zu und erlaube die Verarbeitung meiner Daten für die Kontaktaufnahme. *
+                 Ich stimme der <a href="/datenschutz" className="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung</a> zu und erlaube die Verarbeitung meiner Daten für die Kontaktaufnahme. <span className="text-red-500" aria-label="Pflichtfeld">*</span>
                </label>
              </div>
 
             {/* Statusmeldungen */}
             {submitStatus.type && (
-              <div className={`p-4 rounded-lg ${
-                submitStatus.type === 'success' 
-                  ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800' 
-                  : 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
-              }`}>
+              <div 
+                className={`p-4 rounded-lg ${
+                  submitStatus.type === 'success' 
+                    ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800' 
+                    : 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
+                }`}
+                role="alert"
+                aria-live="polite"
+              >
                 <p className={`text-sm font-medium ${
                   submitStatus.type === 'success' 
                     ? 'text-green-800 dark:text-green-200' 
@@ -347,14 +365,18 @@ export default function Kontakt() {
               <button
                 type="submit"
                 disabled={isSubmitting}
+                aria-describedby="submit-help"
                 className={`btn-primary px-12 py-4 text-lg ${
                   isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >
                 {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
               </button>
+              <div id="submit-help" className="sr-only">
+                Klicken Sie hier, um Ihre Nachricht zu senden. Alle mit Stern markierten Felder sind Pflichtfelder.
+              </div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                * Pflichtfelder
+                <span className="text-red-500">*</span> Pflichtfelder
               </p>
             </div>
           </form>

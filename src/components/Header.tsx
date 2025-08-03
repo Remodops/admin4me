@@ -53,13 +53,13 @@ export default function Header() {
 
   return (
     <header className="bg-gradient-to-r from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 border-b-2 border-blue-200 dark:border-gray-600 sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
-      <nav className="mx-auto max-w-content px-4 sm:px-6 lg:px-8" aria-label="Top">
+      <nav id="navigation" className="mx-auto max-w-content px-4 sm:px-6 lg:px-8" aria-label="Hauptnavigation">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center" aria-label="Zur Startseite">
               <Image
                 src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
-                alt="admin4me Logo"
+                alt="admin4me Logo - Zur Startseite"
                 width={36}
                 height={36}
                 className="h-9 w-auto mr-2 transition-all duration-200"
@@ -69,11 +69,13 @@ export default function Header() {
           </div>
           
           {/* Desktop navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            {navigation.map((item) => (
+          <div className="hidden md:flex md:items-center md:space-x-8" role="menubar">
+            {navigation.map((item, index) => (
               <Link
                 key={item.name}
                 href={item.href}
+                role="menuitem"
+                aria-current={pathname === item.href ? 'page' : undefined}
                 className={`text-sm font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg px-4 py-2.5 ${
                   pathname === item.href
                     ? 'text-white bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 shadow-lg transform scale-105'
@@ -95,7 +97,8 @@ export default function Header() {
               className="p-2.5 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg transition-all duration-200 hover:shadow-md"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded={mobileMenuOpen}
-              aria-label="Toggle navigation menu"
+              aria-controls="mobile-menu"
+              aria-label={mobileMenuOpen ? "Navigation schließen" : "Navigation öffnen"}
             >
               {mobileMenuOpen ? (
                 <XMarkIcon />
@@ -108,12 +111,14 @@ export default function Header() {
 
         {/* Mobile navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden">
+          <div id="mobile-menu" className="md:hidden" role="menu" aria-label="Mobile Navigation">
             <div className="space-y-2 pb-6 pt-4 border-t-2 border-blue-200 dark:border-gray-600 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-gray-800/50 dark:to-transparent rounded-b-lg">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <Link
                   key={item.name}
                   href={item.href}
+                  role="menuitem"
+                  aria-current={pathname === item.href ? 'page' : undefined}
                   className={`mobile-nav-link text-base font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
                     pathname === item.href
                       ? 'active'
