@@ -139,11 +139,11 @@ export default function Leistungen() {
             <div className="text-center mb-8">
               <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
                 <Image
-                  src="/images/leistungen/notara-logo-hell.svg"
+                  src="/images/leistungen/notara-logo-dark.svg"
                   alt="Notara Logo - Notarsoftware"
                   width={400}
                   height={120}
-                  className="w-full h-auto object-contain max-h-20"
+                  className="w-full h-auto object-contain max-h-20 dark:filter dark:invert"
                   style={{ imageRendering: 'auto' }}
                 />
               </div>
