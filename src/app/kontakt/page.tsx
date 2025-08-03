@@ -93,7 +93,7 @@ export default function Kontakt() {
           message: result.error || 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
         });
       }
-    } catch (error) {
+    } catch (_error) {
       setSubmitStatus({
         type: 'error',
         message: 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
