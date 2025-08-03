@@ -76,8 +76,8 @@ export default function Kontakt() {
           type: 'success',
           message: result.message
         });
-                 // Formular zurücksetzen
-         setFormData({
+        // Formular zurücksetzen
+        setFormData({
            firstName: '',
            lastName: '',
            email: '',
@@ -93,6 +93,7 @@ export default function Kontakt() {
           message: result.error || 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
         });
       }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch {
       setSubmitStatus({
         type: 'error',
