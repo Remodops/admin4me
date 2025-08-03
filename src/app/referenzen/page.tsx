@@ -165,12 +165,12 @@ const referenzen = [
 export default function Referenzen() {
   return (
     <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8 py-20">
-      <section className="text-center mb-32">
+      <section className="text-center mb-16">
         <h1 className="heading-xl text-gray-900 dark:text-white mb-12">
           Unsere Referenzen
         </h1>
         <p className="text-enhanced text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-          Erfolgreiche IT-Projekte für zufriedene Kunden in Moringen und Umgebung. Vertrauen Sie auf unsere Erfahrung und Kompetenz.
+          Erfolgreiche IT-Projekte für zufriedene Kunden -Deutschlandweite- Vertrauen Sie auf unsere langjährige Erfahrung und Kompetenz
         </p>
       </section>
 
