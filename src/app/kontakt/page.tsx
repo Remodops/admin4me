@@ -93,7 +93,6 @@ export default function Kontakt() {
           message: result.error || 'Beim Senden der Nachricht ist ein Fehler aufgetreten.'
         });
       }
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch {
       setSubmitStatus({
         type: 'error',

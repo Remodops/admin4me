@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Referenzen – admin4me",
@@ -178,11 +179,13 @@ export default function Referenzen() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {referenzen.map((ref) => (
             <div key={ref.name} className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 flex flex-col items-center">
-              <img
-                src={ref.logo}
-                alt={`${ref.name} - Firmenlogo`}
-                className="max-h-32 max-w-full w-auto h-auto mb-8 object-contain"
-              />
+                             <Image
+                 src={ref.logo}
+                 alt={`${ref.name} - Firmenlogo`}
+                 width={128}
+                 height={128}
+                 className="max-h-32 max-w-full w-auto h-auto mb-8 object-contain"
+               />
               <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>
               <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-4">

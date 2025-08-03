@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 // Icons als SVG-Komponenten
@@ -56,9 +57,11 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
                 alt="admin4me Logo"
+                width={36}
+                height={36}
                 className="h-9 w-auto mr-2 transition-all duration-200"
                 style={{ maxHeight: '36px' }}
               />
