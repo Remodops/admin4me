@@ -10,7 +10,8 @@ export default function Kontakt() {
     phone: '',
     subject: '',
     message: '',
-    privacy: false
+    privacy: false,
+    website: '' // Honeypot-Feld
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,6 +30,16 @@ export default function Kontakt() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Honeypot-Check: Wenn das versteckte Feld ausgefüllt ist, ist es wahrscheinlich ein Bot
+    if (formData.website) {
+      console.log('Honeypot triggered - likely spam');
+      setSubmitStatus({
+        type: 'success',
+        message: 'Ihre Nachricht wurde erfolgreich gesendet'
+      });
+      return;
+    }
     
     if (!formData.privacy) {
       setSubmitStatus({
