@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Referenzen – admin4me",
-  description: "Zufriedene Kunden aus Moringen und Umgebung. Referenzen von REWE Markt, bohrmann & mai und weiteren Unternehmen.",
+  title: "Referenzen & Kunden – admin4me Moringen",
+  description: "Zufriedene Kunden aus Moringen und Umgebung. Referenzen von REWE Markt, Lindigkeit & Mertens, BDS Mehrwert und weiteren Unternehmen. Vertrauen Sie auf unsere Erfahrung!",
+  keywords: "IT-Referenzen, zufriedene Kunden, REWE Markt, Lindigkeit & Mertens, BDS Mehrwert, Bauverein Northeim, GOESYS AG, Moringen, IT-Erfolge",
 };
 
 const referenzen = [
@@ -185,6 +186,9 @@ export default function Referenzen() {
                  width={128}
                  height={128}
                  className="max-h-32 max-w-full w-auto h-auto mb-8 object-contain"
+                 loading="lazy"
+                 placeholder="blur"
+                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                />
               <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>

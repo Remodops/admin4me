@@ -25,10 +25,20 @@ export default function Home() {
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
         
+        {/* Call-to-Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          <Link href="/kontakt" className="btn-primary text-lg px-8 py-4">
+            Kostenlose Beratung anfragen
+          </Link>
+          <Link href="/leistungen" className="btn-secondary text-lg px-8 py-4">
+            Unsere Leistungen
+          </Link>
+        </div>
+        
         {/* Scroll Arrow */}
         <button
           onClick={scrollToProblems}
-          className="mt-8 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-600 group"
+          className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-600 group"
           aria-label="Zu den IT-Problemen scrollen"
         >
           <svg 

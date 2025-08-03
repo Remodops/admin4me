@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Leistungen – admin4me",
-  description: "Unsere IT-Services: Softwarepflege, Netzwerkwartung, Vor-Ort-Service, Remote-Support, IT-Beratung und Hardwareberatung.",
+  title: "IT-Leistungen & Services – admin4me Moringen",
+  description: "Professionelle IT-Services in Moringen: Softwarepflege, Netzwerkwartung, Vor-Ort-Service, Remote-Support, IT-Beratung und Hardwareberatung. Kostenlose Beratung anfragen!",
+  keywords: "IT-Services, Softwarepflege, Netzwerkwartung, Vor-Ort-Service, Remote-Support, IT-Beratung, Hardwareberatung, Moringen, EDV-Support",
 };
 
 export default function Leistungen() {
@@ -586,12 +587,9 @@ export default function Leistungen() {
         <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
           Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch. Wir finden gemeinsam die beste Lösung für Ihre IT-Anforderungen.
         </p>
-        <div className="flex flex-col sm:flex-row gap-8 justify-center">
+        <div className="flex justify-center">
           <a href="/kontakt" className="btn-primary">
             Beratung anfragen
-          </a>
-          <a href="/preise" className="btn-secondary">
-            Preise ansehen
           </a>
         </div>
       </section>

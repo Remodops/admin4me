@@ -12,29 +12,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "admin4me – IT-Administration & Support",
-  description: "Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb. IT-Administration und Support in Moringen und Umgebung.",
-  keywords: "IT-Administration, IT-Support, Netzwerkwartung, Vor-Ort-Service, Moringen",
+  title: "admin4me – IT-Administration & Support in Moringen",
+  description: "Professioneller IT-Support in Moringen und Umgebung. Schnelle Hilfe bei EDV-Problemen, Netzwerkwartung, Vor-Ort-Service und Remote-Support. Kostenlose Beratung anfragen!",
+  keywords: "IT-Administration, IT-Support, Netzwerkwartung, Vor-Ort-Service, Moringen, EDV-Support, Computer-Reparatur, Remote-Support, IT-Beratung",
   authors: [{ name: "admin4me" }],
   creator: "admin4me",
   publisher: "admin4me",
   robots: "index, follow",
   openGraph: {
-    title: "admin4me – IT-Administration & Support",
-    description: "Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb. IT-Administration und Support in Moringen und Umgebung.",
+    title: "admin4me – IT-Administration & Support in Moringen",
+    description: "Professioneller IT-Support in Moringen und Umgebung. Schnelle Hilfe bei EDV-Problemen, Netzwerkwartung und Vor-Ort-Service.",
     type: "website",
     locale: "de_DE",
+    url: "https://admin4me.de",
+    siteName: "admin4me",
   },
   twitter: {
-    card: "summary",
-    title: "admin4me – IT-Administration & Support",
-    description: "Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb.",
+    card: "summary_large_image",
+    title: "admin4me – IT-Administration & Support in Moringen",
+    description: "Professioneller IT-Support in Moringen und Umgebung. Schnelle Hilfe bei EDV-Problemen.",
   },
   viewport: "width=device-width, initial-scale=1",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#10192B" }
   ],
+  alternates: {
+    canonical: "https://admin4me.de",
+  },
 };
 
 export default function RootLayout({
