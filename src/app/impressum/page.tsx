@@ -45,7 +45,7 @@ export default function Impressum() {
                 Kontakt
               </h3>
               <p className="text-sm leading-relaxed">
-                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">05554-7249063</a><br />
+                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">05554-7249 063</a><br />
                 E-Mail: über das <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Kontaktformular</a>
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function Impressum() {
                 Umsatzsteuer-ID
               </h3>
               <p className="text-sm leading-relaxed">
-                <span className="font-medium">Umsatzsteuer-ID:</span> DE348411538<br />
+                <span className="font-medium">Umsatzsteuer-ID:</span> DE 3 484 115 38<br />
                 <span className="text-gray-500 dark:text-gray-400">(vergeben durch das Bundeszentralamt für Steuern)</span>
               </p>
             </div>

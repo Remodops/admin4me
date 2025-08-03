@@ -160,7 +160,7 @@ Die Website ist bereit für Deployment auf:
 Lothar Frank  
 Lange Straße 4  
 37186 Moringen  
-Tel: [05554-7249063](tel:055547249063)  
+Tel: [05554-7249 063](tel:055547249063)  
 E-Mail: [info@admin4me.de](mailto:info@admin4me.de)
 
 ## 📄 Lizenz
