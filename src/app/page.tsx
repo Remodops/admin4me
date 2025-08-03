@@ -44,24 +44,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* CTA Section */}
-      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional mb-32">
-        <h2 className="heading-md text-professional dark:text-white mb-10">
-          Bereit für professionellen IT-Support?
-        </h2>
-        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
-          Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. Kontaktieren Sie uns für ein unverbindliches Gespräch.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-8 justify-center">
-          <Link href="/kontakt" className="btn-primary">
-            Beratung anfragen
-          </Link>
-          <Link href="/leistungen" className="btn-secondary">
-            Unsere Leistungen
-          </Link>
-        </div>
-      </section>
-
       {/* Typische IT-Probleme Section */}
       <section className="mb-32">
         <h2 className="heading-lg text-professional dark:text-white text-center mb-24">
@@ -97,6 +79,24 @@ export default function Home() {
               Mehr erfahren →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional mb-32">
+        <h2 className="heading-md text-professional dark:text-white mb-10">
+          Bereit für professionellen IT-Support?
+        </h2>
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+          Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. Kontaktieren Sie uns für ein unverbindliches Gespräch.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-8 justify-center">
+          <Link href="/kontakt" className="btn-primary">
+            Beratung anfragen
+          </Link>
+          <Link href="/leistungen" className="btn-secondary">
+            Unsere Leistungen
+          </Link>
         </div>
       </section>
     </div>
