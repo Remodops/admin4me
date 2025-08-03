@@ -70,7 +70,7 @@ export default function Header() {
           
           {/* Desktop navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8" role="menubar">
-            {navigation.map((item, index) => (
+            {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -113,7 +113,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <div id="mobile-menu" className="md:hidden" role="menu" aria-label="Mobile Navigation">
             <div className="space-y-2 pb-6 pt-4 border-t-2 border-blue-200 dark:border-gray-600 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-gray-800/50 dark:to-transparent rounded-b-lg">
-              {navigation.map((item, index) => (
+              {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
