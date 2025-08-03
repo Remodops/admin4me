@@ -1,7 +1,6 @@
 'use client';
 
 import Link from "next/link";
-import { useEffect, useState } from 'react';
 
 const scrollToProblems = () => {
   const problemsSection = document.getElementById('it-probleme');
