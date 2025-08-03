@@ -134,6 +134,80 @@ export default function Leistungen() {
               </a>
             </div>
           </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="text-center mb-8">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
+                <Image
+                  src="/images/leistungen/notara-logo-hell.svg"
+                  alt="Notara Logo - Notarsoftware"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain max-h-20"
+                  style={{ imageRendering: 'auto' }}
+                />
+              </div>
+              <h3 className="text-lg font-bold text-professional dark:text-white">
+                Notara Support
+              </h3>
+            </div>
+            <div className="space-y-2 mb-8">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Installation & Updates</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Konfiguration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Troubleshooting</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenmigration</div>
+            </div>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Professioneller Support für Notara-Software mit Installation, Konfiguration und laufender Betreuung für Notare und Notariatsangestellte.
+              </p>
+              <a 
+                href="https://notara.de" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
+              >
+                Mehr über Notara →
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 lg:p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift h-full">
+            <div className="text-center mb-8">
+              <div className="w-full pt-6 mb-6 flex justify-center items-center" style={{ minHeight: '80px' }}>
+                <Image
+                  src="/images/leistungen/bundesnotarkammer.png"
+                  alt="Bundesnotarkammer Logo"
+                  width={400}
+                  height={120}
+                  className="w-full h-auto object-contain max-h-20"
+                  style={{ imageRendering: 'auto' }}
+                />
+              </div>
+              <h3 className="text-lg font-bold text-professional dark:text-white">
+                Bundesnotarkammer Support
+              </h3>
+            </div>
+            <div className="space-y-2 mb-8">
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Software-Support</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Systemintegration</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Datenübertragung</div>
+              <div className="referenz-service font-semibold text-base text-gray-700 dark:text-gray-300">Compliance</div>
+            </div>
+            <div className="min-h-[220px] flex flex-col">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                Kompetente Unterstützung bei der Integration und Nutzung von Bundesnotarkammer-Systemen und -Software für Notare.
+              </p>
+              <a 
+                href="https://www.bnotk.de/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold mt-auto transition-colors duration-200"
+              >
+                Mehr über Bundesnotarkammer →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
