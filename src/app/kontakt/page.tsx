@@ -98,9 +98,6 @@ export default function Kontakt() {
           </h2>
 
           <form 
-            action="https://formsubmit.co/info@admin4me.de" 
-            method="POST" 
-            target="_blank" 
             className="space-y-8"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -208,8 +205,9 @@ export default function Kontakt() {
 
             <div className="text-center pt-6">
               <button
-                type="submit"
+                type="button"
                 className="btn-primary px-12 py-4 text-lg"
+                disabled
               >
                 Nachricht senden
               </button>
