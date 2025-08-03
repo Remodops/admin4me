@@ -84,7 +84,7 @@ const referenzen = [
     website: 'https://www.nueske-landschaftsbau.de/'
   },
   {
-    name: 'Bayern Impulse',
+    name: 'Bayern-Impuls',
     logo: '/images/references/bayern-impulse.png',
     text: 'Bayern Impulse – Innovative Lösungen und Impulse für die bayerische Wirtschaft.',
     bullets: [
@@ -92,18 +92,18 @@ const referenzen = [
       'Innovationsberatung',
       'Regionale Entwicklung'
     ],
-    website: 'https://www.bayern-impulse.de/'
+    website: 'https://bayern-impuls.de/'
   },
   {
     name: 'IT Fernsehen UG',
     logo: '/images/references/it-fernsehen.png',
-    text: 'IT Fernsehen UG – Professionelle IT-Lösungen und Beratung für moderne Unternehmen.',
+    text: 'IT Fernsehen UG – Professionelle LiveStream- und Videoproduktionen für moderne Projekte.',
     bullets: [
-      'IT-Beratung & Consulting',
-      'Systemadministration',
-      'Netzwerk-Services'
+      'Live auf Ihrer Webseite',
+      'Parallel auf allen Media-Plattformen',
+      'Professionelle Videoproduktion'
     ],
-    website: 'https://www.it-fernsehen.de/'
+    website: 'https://it-television.net/'
   },
   {
     name: 'Barenberg Special Materials GmbH',
