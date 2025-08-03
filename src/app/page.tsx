@@ -34,7 +34,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center mb-32">
         <h1 className="heading-xl text-gray-900 dark:text-white mb-10">
-          admin4me
+          Professioneller IT-Support
         </h1>
         <p className="text-subtitle dark:text-gray-300 mb-8">
           IT-Administration & Support
@@ -42,19 +42,6 @@ export default function Home() {
         <p className="text-enhanced text-gray-700 dark:text-gray-300 mb-20 max-w-3xl mx-auto">
           Schnelle Hilfe, persönliche Betreuung, zuverlässiger Betrieb
         </p>
-        {/* Logo direkt anzeigen, ohne Kasten */}
-        <div className="mt-8 mb-10 flex justify-center">
-          {mounted ? (
-            <img
-              src={theme === 'dark' ? '/images/logo/logo-dark.png' : '/images/logo/logo-light.png'}
-              alt="admin4me - IT-Administration & Support Logo"
-              className="h-40 max-w-xs w-auto sm:h-80 sm:max-w-2xl"
-              style={{ maxHeight: '320px' }}
-            />
-          ) : (
-            <div className="h-40 w-64 sm:h-80 sm:w-[32rem]" />
-          )}
-        </div>
 
         <Link
           href="/kontakt"
@@ -62,6 +49,24 @@ export default function Home() {
         >
           Kontakt aufnehmen
         </Link>
+      </section>
+
+      {/* CTA Section */}
+      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional mb-32">
+        <h2 className="heading-md text-professional dark:text-white mb-10">
+          Bereit für professionellen IT-Support?
+        </h2>
+        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+          Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. Kontaktieren Sie uns für ein unverbindliches Gespräch.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-8 justify-center">
+          <Link href="/kontakt" className="btn-primary">
+            Beratung anfragen
+          </Link>
+          <Link href="/leistungen" className="btn-secondary">
+            Unsere Leistungen
+          </Link>
+        </div>
       </section>
 
       {/* Typische IT-Probleme Section */}
@@ -99,24 +104,6 @@ export default function Home() {
               Mehr erfahren →
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-gray-800 rounded-2xl p-16 border-professional dark:border-gray-700 shadow-professional">
-        <h2 className="heading-md text-professional dark:text-white mb-10">
-          Bereit für professionellen IT-Support?
-        </h2>
-        <p className="text-enhanced text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
-          Lassen Sie uns gemeinsam Ihre IT-Probleme lösen. Kontaktieren Sie uns für ein unverbindliches Gespräch.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-8 justify-center">
-          <Link href="/kontakt" className="btn-primary">
-            Beratung anfragen
-          </Link>
-          <Link href="/leistungen" className="btn-secondary">
-            Unsere Leistungen
-          </Link>
         </div>
       </section>
     </div>
