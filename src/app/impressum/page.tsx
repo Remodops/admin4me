@@ -25,79 +25,60 @@ export default function Impressum() {
             Angaben gemäß § 5 TMG
           </h2>
           
-          {/* Modernes zwei-spaltiges Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Linke Spalte - Rubriken */}
-            <div className="lg:col-span-1 space-y-6">
-              <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-                  Diensteanbieter
-                </h3>
-              </div>
-              
-              <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-                  Kontakt
-                </h3>
-              </div>
-              
-              <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-                  Umsatzsteuer-ID
-                </h3>
-              </div>
-              
-              <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-                  Gewerbeanmeldung
-                </h3>
-              </div>
-              
-              <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
-                  Redaktionell verantwortlich
-                </h3>
-              </div>
+          {/* Einfaches, sauberes Layout */}
+          <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300">
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Diensteanbieter
+              </h3>
+              <p className="text-sm leading-relaxed">
+                admin4me<br />
+                Inhaber: Lothar Frank<br />
+                Lange Straße 4<br />
+                37186 Moringen<br />
+                Deutschland
+              </p>
             </div>
 
-            {/* Rechte Spalte - Inhalte */}
-            <div className="lg:col-span-2 space-y-6 text-sm text-gray-600 dark:text-gray-300">
-              <div className="pb-4">
-                <p className="text-sm leading-relaxed">
-                  admin4me<br />
-                  Inhaber: Lothar Frank<br />
-                  Lange Straße 4<br />
-                  37186 Moringen<br />
-                  Deutschland
-                </p>
-              </div>
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Kontakt
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">05554-7249063</a><br />
+                E-Mail: über das <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Kontaktformular</a>
+              </p>
+            </div>
 
-              <div className="pb-4">
-                <p className="text-sm leading-relaxed">
-                  Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">05554-7249063</a><br />
-                  E-Mail: über das <a href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Kontaktformular</a>
-                </p>
-              </div>
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Umsatzsteuer-ID
+              </h3>
+              <p className="text-sm leading-relaxed">
+                <span className="font-medium">Umsatzsteuer-ID:</span> DE348411538<br />
+                <span className="text-gray-500 dark:text-gray-400">(vergeben durch das Bundeszentralamt für Steuern)</span>
+              </p>
+            </div>
 
-              <div className="pb-4">
-                <p className="text-sm leading-relaxed">
-                  <span className="font-medium">Umsatzsteuer-ID:</span> DE348411538<br />
-                  <span className="text-gray-500 dark:text-gray-400">(vergeben durch das Bundeszentralamt für Steuern)</span>
-                </p>
-              </div>
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Gewerbeanmeldung
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Gewerbeanmeldung gemäß § 14 GewO bei der Stadt Moringen.<br />
+                Die Tätigkeit unterliegt keiner behördlichen Zulassungspflicht.
+              </p>
+            </div>
 
-              <div className="pb-4">
-                <p className="text-sm leading-relaxed">
-                  Gewerbeanmeldung gemäß § 14 GewO bei der Stadt Moringen.<br />
-                  Die Tätigkeit unterliegt keiner behördlichen Zulassungspflicht.
-                </p>
-              </div>
-
-              <div className="pb-4">
-                <p className="text-sm leading-relaxed">
-                  Lothar Frank, Lange Straße 4, 37186 Moringen
-                </p>
-              </div>
+            <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
+              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Redaktionell verantwortlich
+              </h3>
+                             <p className="text-sm leading-relaxed">
+                 Lothar Frank<br />
+                 Lange Straße 4<br />
+                 37186 Moringen
+               </p>
             </div>
           </div>
 
