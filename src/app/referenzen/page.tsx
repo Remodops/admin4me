@@ -22,40 +22,40 @@ const referenzen = [
   {
     name: 'BDS Mehrwert GmbH',
     logo: '/images/references/bds-mehrwert.svg',
-    text: 'BDS Mehrwert GmbH – Exklusive Vorteilsangebote für BDS Bayern Mitglieder in den Bereichen KFZ, Versicherung, Vorsorge und Freizeit.',
+    text: 'Vermittler von Vorteilsangeboten für BDS Bayern Mitglieder in den Bereichen KFZ, Versicherung und Freizeit',
     bullets: [
-      'Vorteilsangebote für Mitglieder',
-      'Branchenbuch & Mediathek',
-      'KFZ Abrufschein-Service'
+      'E-Commerce Plattform-Betreuung',
+      'Mitgliederverwaltung & CRM',
+      'Sichere Zahlungsabwicklung'
     ],
     website: 'https://www.bds-mehrwert.de/'
   },
   {
     name: 'Bauverein Northeim eG',
     logo: '/images/references/bauverein-logo.jpg.webp',
-    text: 'Bauverein Northeim eG – Seit 100 Jahren zuverlässiger Partner für Wohnraumversorgung in Northeim.',
+    text: 'Wohnungsgenossenschaft im Raum Northeim',
     bullets: [
-      'Wohnungsverwaltung',
-      'Genossenschaftliche Strukturen',
-      'Moderne Wohnanlagen'
+      'Wohnungsverwaltungssoftware',
+      'Mitgliederverwaltung & Buchhaltung',
+      'IT-Infrastruktur für Verwaltung'
     ],
     website: 'https://www.bauverein-northeim.de/'
   },
   {
     name: 'GOESYS AG',
     logo: '/images/references/goesys-ag-it-systemhaus-goettingen-logo.png',
-    text: 'GOESYS AG – IT-Systemhaus aus Göttingen mit umfassenden IT-Lösungen für Unternehmen.',
+    text: 'IT-Systemhaus aus Göttingen',
     bullets: [
-      'IT-Systemhaus Services',
-      'Unternehmens-IT-Lösungen',
-      'Professionelle IT-Betreuung'
+      'Server-Infrastruktur',
+      'Netzwerk-Management',
+      'IT-Support & Wartung'
     ],
     website: 'https://www.goesys.de/'
   },
   {
     name: 'Bund der Selbständigen - Gewerbeverband Bayern e. V.',
     logo: '/images/references/bds.png',
-    text: 'Sichere IT-Infrastruktur für den BDS – Datenschutz und Zuverlässigkeit im Fokus.',
+    text: 'Gewerbeverband für selbständige Unternehmer in Bayern',
     bullets: [
       'Datensicherung & Backups',
       'IT-Support für Mitglieder',
@@ -66,7 +66,7 @@ const referenzen = [
   {
     name: 'Hilmer',
     logo: '/images/references/hilmer.png',
-    text: 'Hilmer – Zuverlässige IT-Lösungen und persönlicher Service für Ihr Unternehmen.',
+    text: 'Unternehmen spezialisiert auf Landtechnik und Fahrzeugservice',
     bullets: [
       'IT-Betreuung vor Ort',
       'Hardware-Beschaffung',
@@ -77,7 +77,7 @@ const referenzen = [
   {
     name: 'Nüske Transport und Landschaftsbau GmbH',
     logo: '/images/references/nueske.png',
-    text: 'Nüske – Moderne IT für Transport und Landschaftsbau. Effizient, sicher, zukunftsorientiert.',
+    text: 'Unternehmen für Transport- und Landschaftsbau',
     bullets: [
       'Mobile Arbeitsplatzlösungen',
       'GPS-Tracking für Fahrzeuge',
@@ -88,42 +88,42 @@ const referenzen = [
   {
     name: 'Bayern-Impuls',
     logo: '/images/references/bayern-impulse.png',
-    text: 'Bayern Impulse – Innovative Lösungen und Impulse für die bayerische Wirtschaft.',
+    text: 'Wirtschaftsförderungsgesellschaft für die bayerische Wirtschaft',
     bullets: [
-      'Wirtschaftsförderung',
-      'Innovationsberatung',
-      'Regionale Entwicklung'
+      'Projektmanagement-Systeme',
+      'Datenbanken für Wirtschaftsförderung',
+      'IT-Infrastruktur für Beratung'
     ],
     website: 'https://bayern-impuls.de/'
   },
   {
     name: 'IT Fernsehen UG',
     logo: '/images/references/it-fernsehen.png',
-    text: 'IT Fernsehen UG – Professionelle LiveStream- und Videoproduktionen für moderne Projekte.',
+    text: 'Produktionsfirma für LiveStream- und Videoproduktionen',
     bullets: [
-      'Live auf Ihrer Webseite',
-      'Parallel auf allen Media-Plattformen',
-      'Professionelle Videoproduktion'
+      'Streaming-Infrastruktur',
+      'Video-Produktions-IT',
+      'Webseiten-Integration'
     ],
     website: 'https://it-television.net/'
   },
   {
     name: 'Barenberg Special Materials GmbH',
     logo: '/images/references/Barenberg-Special-Materials-GmbH.png',
-    text: 'Barenberg Special Materials GmbH – Spezialist für Ultra-Hochtemperaturverfahrenstechnik zur Herstellung von Refraktärmetallen.',
+    text: 'Spezialist für Ultra-Hochtemperaturverfahrenstechnik und Refraktärmetalle',
     bullets: [
-      'Wolfram Schmelzcarbid',
-      'Up-Cycling Wolfram Metal Pulver',
-      'F&E für Produktentwicklung'
+      'Produktionssteuerung',
+      'Forschungsdaten-Management',
+      'IT für Verfahrenstechnik'
     ],
     website: 'https://barenberg.solutions/'
   },
   {
     name: 'RA Michael Forster',
     logo: '/images/references/ra-forster.png',
-    text: 'RA Michael Forster – Kompetente Rechtsberatung und zuverlässige IT-Infrastruktur für moderne Kanzleien.',
+    text: 'Rechtsanwaltskanzlei',
     bullets: [
-      'Rechtsanwaltskanzlei',
+      'Rechtsanwaltssoftware',
       'IT-Sicherheit & Compliance',
       'Digitale Arbeitsprozesse'
     ],
@@ -132,33 +132,33 @@ const referenzen = [
   {
     name: 'Sehorz IT-Center',
     logo: '/images/references/sehorz.JPG',
-    text: 'Sehorz IT-Center – Ihr Partner für Mediendesign, Seminare, Software und Consulting mit über 15 Jahren Erfahrung.',
+    text: 'IT-Dienstleister für Mediendesign, Software-Entwicklung und Consulting',
     bullets: [
-      'Mediendesign & Webentwicklung',
-      'Software-Entwicklung (seventox®)',
-      'IT-Consulting & Storage-Experten'
+      'Software-Entwicklung',
+      'Webdesign & Hosting',
+      'IT-Consulting Services'
     ],
     website: 'https://www.sehorz.de/'
   },
   {
     name: 'iS-Fun Internet Services GmbH',
     logo: '/images/references/isfun.PNG',
-    text: 'iS-Fun Internet Services GmbH – Innovative Internet-Services und maßgeschneiderte IT-Lösungen.',
+    text: 'Internet-Service-Provider und IT-Dienstleister',
     bullets: [
-      'Internet Services',
-      'Maßgeschneiderte IT-Lösungen',
-      'Moderne Webtechnologien'
+      'Webhosting & Domains',
+      'Internet-Services',
+      'IT-Lösungen für Kunden'
     ],
     website: 'https://www.is-fun.de/'
   },
   {
     name: 'Biogas',
     logo: '/images/references/biogas.png',
-    text: 'Biogas – Innovative Lösungen für nachhaltige Energiegewinnung und Umwelttechnologie.',
+    text: 'Branchenverband für Biogas-Technologie und erneuerbare Energien',
     bullets: [
-      'Nachhaltige Energiegewinnung',
-      'Umwelttechnologie',
-      'Innovative Biogas-Lösungen'
+      'Verbandsverwaltung',
+      'Mitgliederdatenbanken',
+      'IT für Energiebranche'
     ],
     website: 'https://intranet.biogas.org/edcom/webfvb.nsf/id/DE_Homepage'
   },
