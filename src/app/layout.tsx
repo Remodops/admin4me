@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,6 +51,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className="transition-colors duration-300">
+      <head>
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="c44fb0cd-ecb2-470f-8c98-11bf40f75a83"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased transition-colors duration-300`}>
         <ThemeProvider>
           {/* Skip-Links für Barrierefreiheit */}
