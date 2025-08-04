@@ -136,15 +136,11 @@ export default function Kontakt() {
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="heading-sm text-professional dark:text-white mb-3">
-                  E-Mail
+                  Kontaktformular
                 </h3>
-                <a
-                  href="mailto:info@admin4me.de"
-                  className="text-accent dark:text-blue-400 hover:text-professional dark:hover:text-blue-300 transition-all duration-200 font-semibold text-lg tracking-wide"
-                  aria-label="E-Mail an info@admin4me.de senden"
-                >
-                  info@admin4me.de
-                </a>
+                <p className="text-gray-600 dark:text-gray-300 font-medium text-lg tracking-wide">
+                  Nutzen Sie unser sicheres Kontaktformular
+                </p>
               </div>
             </div>
 
