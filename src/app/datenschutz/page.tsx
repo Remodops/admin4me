@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Datenschutz – admin4me",
@@ -121,7 +122,7 @@ export default function Datenschutz() {
                 Lange Straße 4<br />
                 37186 Moringen<br />
                 Telefon: <a href="tel:055547249063" className="text-blue-600 dark:text-blue-400 hover:underline">05554-7249 063</a><br />
-                E-Mail: <a href="mailto:info@admin4me.de" className="text-blue-600 dark:text-blue-400 hover:underline">info@admin4me.de</a>
+                E-Mail: <Link href="/kontakt" className="text-blue-600 dark:text-blue-400 hover:underline">Kontaktformular</Link>
               </p>
               <p className="mt-4">
                 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen 

@@ -21,13 +21,13 @@ export default function Footer() {
                 </a>
               </div>
               <div role="listitem">
-                <a 
-                  href="mailto:info@admin4me.de" 
+                <Link 
+                  href="/kontakt" 
                   className="hover:text-professional dark:hover:text-blue-300 transition-all duration-200 font-medium tracking-wide hover:underline"
-                  aria-label="E-Mail an info@admin4me.de senden"
+                  aria-label="Zum Kontaktformular"
                 >
-                  ✉️ info@admin4me.de
-                </a>
+                  ✉️ Kontaktformular
+                </Link>
               </div>
             </div>
           </div>
