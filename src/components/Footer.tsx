@@ -124,13 +124,13 @@ export default function Footer() {
               Diese Website ist barrierefrei gestaltet. Bei Problemen kontaktieren Sie uns:
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
-                href="mailto:barrierefreiheit@admin4me.de" 
+              <Link 
+                href="/kontakt" 
                 className="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"
-                aria-label="E-Mail für Barrierefreiheitsfragen"
+                aria-label="Kontaktformular für Barrierefreiheitsfragen"
               >
-                barrierefreiheit@admin4me.de
-              </a>
+                Kontaktformular
+              </Link>
               <span className="text-gray-400">|</span>
               <a 
                 href="tel:055544074740" 
