@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 // ThemeProvider entfernt - verwende einfache Dark Mode Implementierung
@@ -34,14 +34,18 @@ export const metadata: Metadata = {
     title: "admin4me – IT-Administration & Support in Moringen",
     description: "Professioneller IT-Support in Moringen und Umgebung. Schnelle Hilfe bei EDV-Problemen.",
   },
-  viewport: "width=device-width, initial-scale=1",
+  alternates: {
+    canonical: "https://admin4me.de",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#10192B" }
   ],
-  alternates: {
-    canonical: "https://admin4me.de",
-  },
 };
 
 export default function RootLayout({
