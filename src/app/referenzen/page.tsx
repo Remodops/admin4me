@@ -179,7 +179,7 @@ export default function Referenzen() {
       <section className="mb-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {referenzen.map((ref) => (
-            <div key={ref.name} className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 flex flex-col items-center">
+            <div key={ref.name} className="bg-white dark:bg-gray-800 rounded-2xl p-10 border border-professional dark:border-gray-700 shadow-professional hover-lift transition-all duration-300 flex flex-col items-center h-full">
                              <Image
                 src={ref.logo}
                 alt={`${ref.name} - Firmenlogo`}
@@ -194,7 +194,7 @@ export default function Referenzen() {
               />
               <h3 className="text-lg font-semibold text-professional dark:text-white mb-2 text-center whitespace-pre-line">{ref.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed mb-4">{ref.text}</p>
-              <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-4">
+              <ul className="text-gray-600 dark:text-gray-300 text-left space-y-1 mb-4 flex-grow">
                 {ref.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start"><span className="text-blue-500 mr-2 mt-1">•</span>{bullet}</li>
                 ))}
@@ -204,7 +204,7 @@ export default function Referenzen() {
                   href={ref.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200 text-sm"
+                  className="inline-block text-professional hover:text-blue-700 dark:hover:text-blue-300 font-semibold transition-colors duration-200 text-sm mt-auto"
                 >
                   Website besuchen →
                 </a>
