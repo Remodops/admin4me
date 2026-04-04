@@ -9,6 +9,17 @@ export const metadata: Metadata = {
 
 const referenzen = [
   {
+    name: 'Nüske Transport und Landschaftsbau GmbH',
+    logo: '/images/references/nueske.png',
+    text: 'Unternehmen für Transport- und Landschaftsbau',
+    bullets: [
+      'Mobile Arbeitsplatzlösungen',
+      'GPS-Tracking für Fahrzeuge',
+      'Wartung der IT-Infrastruktur'
+    ],
+    website: 'https://www.nueske-landschaftsbau.de/'
+  },
+  {
     name: 'Lindigkeit | Mertens\nPartnerschaft von Rechtsanwälten mbB',
     logo: '/images/references/lindigkeit.png',
     text: 'Rechtsanwalt, Kanzlei und Notariat',
@@ -29,17 +40,6 @@ const referenzen = [
       'Sichere Zahlungsabwicklung'
     ],
     website: 'https://www.bds-mehrwert.de/'
-  },
-  {
-    name: 'Bauverein Northeim eG',
-    logo: '/images/references/bauverein-logo.jpg.webp',
-    text: 'Wohnungsgenossenschaft im Raum Northeim',
-    bullets: [
-      'Wohnungsverwaltungssoftware',
-      'Mitgliederverwaltung & Buchhaltung',
-      'IT-Infrastruktur für Verwaltung'
-    ],
-    website: 'https://www.bauverein-northeim.de/'
   },
   {
     name: 'GOESYS AG',
@@ -75,15 +75,15 @@ const referenzen = [
     website: 'https://www.hilmer-gmbh.de/'
   },
   {
-    name: 'Nüske Transport und Landschaftsbau GmbH',
-    logo: '/images/references/nueske.png',
-    text: 'Unternehmen für Transport- und Landschaftsbau',
+    name: 'Bauverein Northeim eG',
+    logo: '/images/references/bauverein-logo.jpg.webp',
+    text: 'Wohnungsgenossenschaft im Raum Northeim',
     bullets: [
-      'Mobile Arbeitsplatzlösungen',
-      'GPS-Tracking für Fahrzeuge',
-      'Wartung der IT-Infrastruktur'
+      'Wohnungsverwaltungssoftware',
+      'Mitgliederverwaltung & Buchhaltung',
+      'IT-Infrastruktur für Verwaltung'
     ],
-    website: 'https://www.nueske-landschaftsbau.de/'
+    website: 'https://www.bauverein-northeim.de/'
   },
   {
     name: 'Bayern-Impuls',
